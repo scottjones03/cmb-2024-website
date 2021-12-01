@@ -1,0 +1,9 @@
+{
+    "trailingComma": "none",
+    "overrides": [
+        {
+            "files": ["*.js", "*.jsx"],
+            "options": { "tabWidth": 2 }
+        }
+    ]
+}
