@@ -8,12 +8,14 @@ import { styled } from "@mui/material";
 
 const Logo = styled("img")(
   ({ theme }) => `
+  padding-top: 80px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
+  width: auto;
   max-width: 97vw;
+  max-height: 80vh;
 `
 );
 

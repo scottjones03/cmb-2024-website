@@ -12,19 +12,23 @@ export default function AppHeader() {
   return (
     <AppBar position="fixed">
       <Toolbar>
-        <Button
+        <Box
           sx={{
-            flexGrow: 1,
-            my: 2,
-            color: "white",
-            display: "block",
-            textTransform: "none"
+            flexGrow: 1
           }}
-          LinkComponent={Link}
-          to={"/"}
         >
-          <Typography variant="h5">Christ's May Ball 2022</Typography>
-        </Button>
+          <Button
+            sx={{
+              my: 2,
+              color: "white",
+              textTransform: "none"
+            }}
+            LinkComponent={Link}
+            to={"/"}
+          >
+            <Typography variant="h5">Christ's May Ball 2022</Typography>
+          </Button>
+        </Box>
         <Box sx={{ display: "flex" }}>
           {pages.map((page) => (
             <Button
