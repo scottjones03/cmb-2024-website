@@ -54,7 +54,13 @@ function JobItem({ name, description, numHours, pay, needsInterview }) {
         </List>
       </CardContent>
       <CardActions>
-        <Button size="small">Apply</Button>
+        <Button
+          size="small"
+          target="_blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdbfms9x-u7-jHRoFutQzgy2peNn5esjXBuDa6IdFuleyZSfA/viewform"
+        >
+          Apply
+        </Button>
       </CardActions>
     </Card>
   );
