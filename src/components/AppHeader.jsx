@@ -10,7 +10,7 @@ import { styled } from "@mui/material/styles";
 const pages = ["Work for us"];
 
 const Brand = styled(Typography)(({ theme }) => ({
-  fontFamily: "Cinzel",
+  fontFamily: "Classico",
   fontWeight: 600,
   fontSize: 30,
   lineHeight: 1,
@@ -32,9 +32,9 @@ export default function AppHeader() {
             sx={{
               mt: 2.5,
               mb: 2,
-              color: "white",
               textTransform: "none"
             }}
+            color="tertiary"
             LinkComponent={Link}
             to={"/"}
           >
@@ -48,7 +48,12 @@ export default function AppHeader() {
               variant="contained"
               color="secondary"
               disableElevation
-              sx={{ my: 2, color: "white", display: "block", borderRadius: 8 }}
+              sx={{
+                my: 2,
+                display: "block",
+                borderRadius: 8,
+                fontWeight: 600
+              }}
               LinkComponent={Link}
               to={"/work-for-us"}
             >
