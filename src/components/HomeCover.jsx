@@ -1,6 +1,6 @@
 import * as React from "react";
 import ImageBox from "./ImageBox";
-import bg from "../assets/img/2022/background.png";
+import bg from "../assets/img/2022/background_small.png";
 import logo from "../assets/img/2022/cropped-logo.png";
 import "./HomeCover.less";
 import Box from "@mui/material/Box";
@@ -28,7 +28,7 @@ export default function HomeCover() {
         height: "100vh"
       }}
     >
-      <ImageBox imageUrl={bg} lightness={0.5} />
+      <ImageBox imageUrl={bg} lightness={0.5} zoom={130} />
       <Logo src={logo} alt="logo" />
     </Box>
   );

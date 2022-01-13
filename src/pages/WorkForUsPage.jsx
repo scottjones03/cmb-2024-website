@@ -7,7 +7,7 @@ export default function WorkForUsPage() {
   return (
     <>
       <AppHeader />
-      <Filler height={80} />
+      <Filler height={70} />
       <JobsDisplay />
     </>
   );

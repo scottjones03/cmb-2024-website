@@ -17,12 +17,16 @@ import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/material/styles";
 import stone from "../assets/img/2022/stone-cropped.png";
 import data from "../assets/data/jobs.json";
+import bg from "../assets/img/2022/background_small.png";
 
 const Container = styled(Box)(({ theme }) => ({
   padding: theme.spacing(5),
   [theme.breakpoints.down("sm")]: {
     padding: theme.spacing(2)
-  }
+  },
+  backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  url(${bg})`,
+  backgroundSize: "130%",
+  backgroundAttachment: "fixed"
 }));
 
 const JobCard = styled(Card)(({ theme }) => ({
@@ -30,7 +34,7 @@ const JobCard = styled(Card)(({ theme }) => ({
   margin: "auto",
   padding: `${theme.spacing(4)} ${theme.spacing(3)}`,
   backgroundColor: "transparent",
-  backgroundImage: `url(${stone})`,
+  backgroundImage: ` url(${stone})`,
   backgroundSize: "100% 100%"
 }));
 
