@@ -1,67 +1,72 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import { styled } from "@mui/material/styles";
+import banner from "../assets/img/2022/banner.png";
+import bg from "../assets/img/2022/background.png";
 
-const pages = ["Work for us"];
-
-const Brand = styled(Typography)(({ theme }) => ({
-  fontFamily: "Classico",
-  fontWeight: 600,
-  fontSize: 30,
-  lineHeight: 1,
-  [theme.breakpoints.down("sm")]: {
-    fontSize: 18
-  }
-}));
+const pages = [
+  // { name: "Committee", link: "" },
+  { name: "Home", link: "/" },
+  // { name: "Tickets", link: "" },
+  // { name: "Sponsors", link: "" },
+  { name: "Work for us", link: "/work-for-us" }
+];
 
 export default function AppHeader() {
   return (
-    <AppBar position="fixed">
-      <Toolbar>
+    <Box
+      pt={3}
+      zIndex={100}
+      sx={{
+        position: "fixed",
+        width: "100%",
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "100% 50%",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
+      <Box
+        mx="auto"
+        sx={{
+          maxWidth: 1300,
+          position: "relative"
+        }}
+      >
         <Box
           sx={{
-            flexGrow: 1
+            position: "absolute",
+            height: "100%",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
           }}
         >
-          <Button
-            sx={{
-              mt: 2.5,
-              mb: 2,
-              textTransform: "none"
-            }}
-            color="tertiary"
-            LinkComponent={Link}
-            to={"/"}
-          >
-            <Brand variant="span">Christ's May Ball 2022</Brand>
-          </Button>
-        </Box>
-        <Box sx={{ display: "flex" }}>
-          {pages.map((page) => (
+          {pages.map(({ name, link }) => (
             <Button
-              key={page}
-              variant="contained"
-              color="secondary"
+              key={name}
+              color="tertiary"
+              size="large"
               disableElevation
               sx={{
-                my: 2,
-                display: "block",
-                borderRadius: 8,
-                fontWeight: 600
+                fontWeight: 600,
+                fontSize: {
+                  xs: 14,
+                  sm: 20,
+                  lg: 26
+                },
+                fontStyle: "italic"
               }}
               LinkComponent={Link}
-              to={"/work-for-us"}
+              to={link}
             >
-              {page}
+              {name}
             </Button>
           ))}
         </Box>
-      </Toolbar>
-    </AppBar>
+        <Box component="img" src={banner} alt="banner" sx={{ width: "100%" }} />
+      </Box>
+    </Box>
   );
 }

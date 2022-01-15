@@ -15,17 +15,19 @@ import MoneyIcon from "@mui/icons-material/Money";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/material/styles";
-import stone from "../assets/img/2022/stone-cropped.png";
+
+import Filler from "./Filler";
 import data from "../assets/data/jobs.json";
-import bg from "../assets/img/2022/background_small.png";
+import stone from "../assets/img/2022/stone.png";
+import bg from "../assets/img/2022/background.png";
 
 const Container = styled(Box)(({ theme }) => ({
   padding: theme.spacing(5),
   [theme.breakpoints.down("sm")]: {
     padding: theme.spacing(2)
   },
-  backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  url(${bg})`,
-  backgroundSize: "130%",
+  backgroundImage: `url(${bg})`,
+  backgroundSize: "cover",
   backgroundAttachment: "fixed"
 }));
 
@@ -87,7 +89,10 @@ const JobItem = ({ name, description, numHours, pay, needsInterview }) => (
 
 const JobsDisplay = () => (
   <Container>
-    <Box sx={{ maxWidth: 1100, margin: "auto" }}>
+    <Box
+      pt={{ xs: 15, sm: 17, md: 23, lg: 25 }}
+      sx={{ maxWidth: 1100, margin: "auto" }}
+    >
       <Typography variant="h2" mb={2}>
         Open Jobs
       </Typography>
