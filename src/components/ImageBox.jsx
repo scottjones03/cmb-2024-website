@@ -11,7 +11,8 @@ export default function ImageBox({
       style={{
         backgroundImage: `linear-gradient(rgba(255, 255, 255, ${lightness}), 
         rgba(255, 255, 255, ${lightness})), url(${imageUrl})`,
-        backgroundSize: `${zoom}%`
+        backgroundSize: `${zoom}%`,
+        backgroundRepeat: "repeat"
       }}
     ></div>
   );
