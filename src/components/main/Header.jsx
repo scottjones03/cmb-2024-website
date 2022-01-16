@@ -15,7 +15,6 @@ const pages = [
 export default function Header() {
   return (
     <Box
-      pt={3}
       zIndex={100}
       sx={{
         display: "flex",
@@ -25,7 +24,7 @@ export default function Header() {
     >
       <Box
         sx={{
-          maxWidth: 1300,
+          maxWidth: 1200,
           minWidth: 900,
           position: "relative"
         }}

@@ -5,9 +5,10 @@ import bg from "../assets/img/2022/background.png";
 const Container = (props) => {
   return (
     <Box
-      p={{ xs: 2, sm: 5 }}
+      pt={{ xs: 2, sm: 5 }}
       minHeight="100vh"
       boxSizing="border-box"
+      overflow="hidden"
       sx={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
