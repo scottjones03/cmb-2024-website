@@ -1,10 +1,10 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 
-import Container from "./Container";
-import logo from "../assets/img/2022/prereveal-logo.png";
+import Container from "../Container";
+import logo from "../../assets/img/2022/prereveal-logo.png";
 
-export default function HomeCover() {
+export default function HomeDisplay() {
   return (
     <Container>
       <Box
@@ -12,8 +12,7 @@ export default function HomeCover() {
         pt={5}
         sx={{
           position: "relative",
-          maxWidth: 1200,
-          height: "100vh"
+          maxWidth: 1200
         }}
       >
         <Box px={{ lg: 10, xs: 0 }} pt={25}>

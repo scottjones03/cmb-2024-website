@@ -1,12 +1,12 @@
 import React from "react";
 import AppHeader from "../components/main/AppHeader";
-import HomeDisplay from "../components/main/HomeDisplay";
+import TicketsDisplay from "../components/main/TicketsDisplay";
 
-export default function HomePage() {
+export default function TicketsPage() {
   return (
     <>
       <AppHeader />
-      <HomeDisplay />
+      <TicketsDisplay />
     </>
   );
 }

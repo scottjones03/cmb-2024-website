@@ -16,9 +16,9 @@ import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/material/styles";
 
-import data from "../assets/data/jobs.json";
-import stone from "../assets/img/2022/stone.png";
-import bg from "../assets/img/2022/background.png";
+import data from "../../assets/data/jobs.json";
+import stone from "../../assets/img/2022/stone.png";
+import bg from "../../assets/img/2022/background.png";
 
 const Container = styled(Box)(({ theme }) => ({
   padding: theme.spacing(5),
@@ -89,19 +89,19 @@ const JobItem = ({ name, description, numHours, pay, needsInterview }) => (
 const JobsDisplay = () => (
   <Container>
     <Box
-      pt={{ xs: 15, sm: 17, md: 23, lg: 25 }}
-      sx={{ maxWidth: 1100, margin: "auto" }}
+      m="auto"
+      pt={{ xs: 20, md: 25 }}
+      width={{ xs: "100%", sm: "85%" }}
+      maxWidth={1000}
     >
-      <Typography variant="h2" mb={2}>
+      <Typography
+        variant="h2"
+        mb={2}
+        textAlign={{ xs: "center", sm: "inherit" }}
+      >
         Open Jobs
       </Typography>
-      <Grid
-        sx={{ maxWidth: 1100 }}
-        container
-        spacing={{ xs: 2, md: 3 }}
-        columns={12}
-        justifyContent="center"
-      >
+      <Grid container spacing={{ xs: 2, lg: 3 }} columns={12}>
         {data.jobs.map((job, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <JobItem {...job} />

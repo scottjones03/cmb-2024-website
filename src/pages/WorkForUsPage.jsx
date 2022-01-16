@@ -1,6 +1,6 @@
 import React from "react";
-import AppHeader from "../components/AppHeader";
-import JobsDisplay from "../components/JobsDisplay";
+import AppHeader from "../components/main/AppHeader";
+import JobsDisplay from "../components/main/JobsDisplay";
 
 export default function WorkForUsPage() {
   return (
