@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import banner from "../../assets/img/2022/banner.png";
-import bg from "../../assets/img/2022/background.png";
 
 const pages = [
   // { name: "Committee", link: "" },
@@ -19,13 +18,9 @@ export default function AppHeader() {
       pt={3}
       zIndex={100}
       sx={{
-        position: "fixed",
         display: "flex",
         justifyContent: "center",
-        width: "100%",
-        backgroundImage: `url(${bg})`,
-        backgroundSize: "50% 50%",
-        backgroundRepeat: "repeat-x"
+        width: "100%"
       }}
     >
       <Box

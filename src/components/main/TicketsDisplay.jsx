@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Tab, Tabs, Box, Typography } from "@mui/material";
 
-import Container from "../Container";
 import TabPanel from "../TabPanel";
 import stone from "../../assets/img/2022/stone.png";
 
@@ -125,83 +124,61 @@ export default function TicketsDisplay() {
   };
 
   return (
-    <Container>
+    <Box mx="auto" maxWidth={1200}>
       <Box
-        mx="auto"
-        pt={40}
-        display="flex"
-        justifyContent="center"
+        borderRadius={1}
+        p={{ xs: 4, sm: 8 }}
         sx={{
-          position: "relative",
-          maxWidth: 1200
+          backgroundColor: { xs: "tertiary.main", sm: "inherit" },
+          backgroundImage: { xs: "inherit", sm: `url(${stone})` },
+          backgroundSize: "100% 100%"
         }}
       >
-        <Box
-          sx={{
-            backgroundColor: { xs: "tertiary.main", sm: "inherit" },
-            backgroundImage: { xs: "inherit", sm: `url(${stone})` },
-            backgroundSize: "100% 100%"
-          }}
-        >
-          <Box
-            m="auto"
-            maxWidth="100vw"
-            boxSizing="border-box"
-            p={{ xs: 4, sm: 6 }}
+        <Box mb={2} sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="ticket types tab"
+            variant="scrollable"
+            scrollButtons="auto"
           >
-            <Box mb={2} sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <Tabs
-                value={value}
-                onChange={handleChange}
-                aria-label="ticket types tab"
-                variant="scrollable"
-                scrollButtons="auto"
-              >
-                <TicketTab label="Christ's JCR + MCR students" index={0} />
-                <TicketTab label="Other JCR + MCR students" index={1} />
-                <TicketTab label="Christ's 2021 graduates" index={2} />
-                <TicketTab label="Christ's alumni" index={3} />
-                <TicketTab label="Christ's staff & fellow" index={4} />
-              </Tabs>
-            </Box>
-            <TicketTabPanel value={value} index={0}>
-              <FirstSection />
-              <AccessDescription />
-              <SalesSection start="12:00 noon 29th January, 2022" />
-              <GuestSection numGuests={2} />
-            </TicketTabPanel>
-            <TicketTabPanel value={value} index={1}>
-              <FirstSection />
-              <SalesSection start="12:00 noon 5th February, 2022" />
-              <GuestSection numGuests={2} />
-            </TicketTabPanel>
-            <TicketTabPanel value={value} index={2}>
-              <FirstSection />
-              <SalesSection start="12th January, 2022" />
-              <GuestSection numGuests={2} />
-              <GoogleFormSection />
-            </TicketTabPanel>
-            <TicketTabPanel value={value} index={3}>
-              <FirstSection />
-              <SalesSection
-                start="12th January, 2022"
-                end="30th January, 2022"
-              />
-              <GuestSection numGuests={1} />
-              <GoogleFormSection ballot />
-            </TicketTabPanel>
-            <TicketTabPanel value={value} index={4}>
-              <FirstSection />
-              <SalesSection
-                start="18th January, 2022"
-                end="1st February, 2022"
-              />
-              <GuestSection numGuests={3} />
-              <GoogleFormSection ballot />
-            </TicketTabPanel>
-          </Box>
+            <TicketTab label="Christ's JCR + MCR students" index={0} />
+            <TicketTab label="Other JCR + MCR students" index={1} />
+            <TicketTab label="Christ's 2021 graduates" index={2} />
+            <TicketTab label="Christ's alumni" index={3} />
+            <TicketTab label="Christ's staff & fellow" index={4} />
+          </Tabs>
         </Box>
+        <TicketTabPanel value={value} index={0}>
+          <FirstSection />
+          <AccessDescription />
+          <SalesSection start="12:00 noon 29th January, 2022" />
+          <GuestSection numGuests={2} />
+        </TicketTabPanel>
+        <TicketTabPanel value={value} index={1}>
+          <FirstSection />
+          <SalesSection start="12:00 noon 5th February, 2022" />
+          <GuestSection numGuests={2} />
+        </TicketTabPanel>
+        <TicketTabPanel value={value} index={2}>
+          <FirstSection />
+          <SalesSection start="12th January, 2022" />
+          <GuestSection numGuests={2} />
+          <GoogleFormSection />
+        </TicketTabPanel>
+        <TicketTabPanel value={value} index={3}>
+          <FirstSection />
+          <SalesSection start="12th January, 2022" end="30th January, 2022" />
+          <GuestSection numGuests={1} />
+          <GoogleFormSection ballot />
+        </TicketTabPanel>
+        <TicketTabPanel value={value} index={4}>
+          <FirstSection />
+          <SalesSection start="18th January, 2022" end="1st February, 2022" />
+          <GuestSection numGuests={3} />
+          <GoogleFormSection ballot />
+        </TicketTabPanel>
       </Box>
-    </Container>
+    </Box>
   );
 }

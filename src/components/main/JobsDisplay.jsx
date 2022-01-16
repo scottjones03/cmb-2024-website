@@ -18,17 +18,6 @@ import { styled } from "@mui/material/styles";
 
 import data from "../../assets/data/jobs.json";
 import stone from "../../assets/img/2022/stone.png";
-import bg from "../../assets/img/2022/background.png";
-
-const Container = styled(Box)(({ theme }) => ({
-  padding: theme.spacing(5),
-  [theme.breakpoints.down("sm")]: {
-    padding: theme.spacing(2)
-  },
-  backgroundImage: `url(${bg})`,
-  backgroundSize: "cover",
-  backgroundAttachment: "fixed"
-}));
 
 const JobCard = styled(Card)(({ theme }) => ({
   maxWidth: 370,
@@ -87,29 +76,18 @@ const JobItem = ({ name, description, numHours, pay, needsInterview }) => (
 );
 
 const JobsDisplay = () => (
-  <Container>
-    <Box
-      m="auto"
-      pt={{ xs: 20, md: 25 }}
-      width={{ xs: "100%", sm: "85%" }}
-      maxWidth={1000}
-    >
-      <Typography
-        variant="h2"
-        mb={2}
-        textAlign={{ xs: "center", sm: "inherit" }}
-      >
-        Open Jobs
-      </Typography>
-      <Grid container spacing={{ xs: 2, lg: 3 }} columns={12}>
-        {data.jobs.map((job, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <JobItem {...job} />
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
-  </Container>
+  <Box m="auto" width={{ xs: "100%", sm: "85%" }} maxWidth={1100}>
+    <Typography variant="h2" mb={2} textAlign={{ xs: "center", sm: "inherit" }}>
+      Open Jobs
+    </Typography>
+    <Grid container spacing={{ xs: 2, lg: 3 }} columns={12}>
+      {data.jobs.map((job, index) => (
+        <Grid item xs={12} sm={6} md={4} key={index}>
+          <JobItem {...job} />
+        </Grid>
+      ))}
+    </Grid>
+  </Box>
 );
 
 export default JobsDisplay;
