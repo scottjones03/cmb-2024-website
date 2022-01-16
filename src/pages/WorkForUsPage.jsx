@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "../components/Container";
-import AppHeader from "../components/main/AppHeader";
+import Header from "../components/main/Header";
 import JobsDisplay from "../components/main/JobsDisplay";
 
 export default function WorkForUsPage() {
   return (
     <Container>
-      <AppHeader />
+      <Header />
       <JobsDisplay />
     </Container>
   );

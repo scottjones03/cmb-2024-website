@@ -12,7 +12,7 @@ const pages = [
   { name: "Work for us", link: "/work-for-us" }
 ];
 
-export default function AppHeader() {
+export default function Header() {
   return (
     <Box
       pt={3}
