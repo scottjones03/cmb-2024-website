@@ -25,7 +25,7 @@ const FooterLink = ({ text, link, ...others }) => (
 );
 
 const Footer = () => (
-  <Box pt={20} pb={10}>
+  <Box pt={10} pb={10}>
     <Box display="flex" justifyContent="center">
       <Box mx={1} mb={3}>
         <IconButton

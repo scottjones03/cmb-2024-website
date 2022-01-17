@@ -19,7 +19,7 @@ const TicketTabPanel = (props) => (
   <TabPanel id="ticket-tabpanel" labelledby="ticket-tab" {...props} />
 );
 
-const FirstSection = () => (
+const FirstSection = ({ standardPrice, queueJumpPrice, diningPrice }) => (
   <>
     <Typography variant="h4">What's included in your ticket?</Typography>
     <BodyParagraph>
@@ -35,16 +35,16 @@ const FirstSection = () => (
       with the different ticket types.
     </BodyParagraph>
     <BodyParagraph>
-      <strong>Standard</strong> – enjoy all of the above, with standard entry to
-      the ball at 21:00
+      <strong>Standard (£{standardPrice})</strong> – enjoy all of the above,
+      with standard entry to the ball at 21:00
     </BodyParagraph>
     <BodyParagraph>
-      <strong>Queue jump</strong> – priority entrance to the Ball from 20:30 via
-      a dedicated queue{" "}
+      <strong>Queue jump (£{queueJumpPrice})</strong> – priority entrance to the
+      Ball from 20:30 via a dedicated queue
     </BodyParagraph>
     <BodyParagraph>
-      <strong>Dining</strong> – arrive at 18:00 for a decadent four course meal
-      in the Great Hall followed by instant entry to the Ball
+      <strong>Dining (£{diningPrice})</strong> – arrive at 18:00 for a decadent
+      four course meal in the Great Hall followed by instant entry to the Ball
     </BodyParagraph>
   </>
 );
@@ -54,7 +54,11 @@ const AccessDescription = () => (
     <BodyParagraph>
       <strong>Access tickets</strong> – Christ’s is very proud to be offering
       Access tickets this year to students on a bursary. Select these as your
-      ticket choice and the Tutorial Office will confirm your status.
+      ticket choice and the Tutorial Office will confirm your status. The prices
+      are{" "}
+      <strong>
+        Access standard (£100), Access queue jump (£115) ,Access dining (£135)
+      </strong>
     </BodyParagraph>
   </>
 );
@@ -63,7 +67,7 @@ const SalesSection = ({ start, end }) => (
   <>
     <Typography variant="h4">Sales date</Typography>
     <BodyParagraph>
-      Ticket sales starts at <strong>{start}</strong>
+      Ticket sale starts at <strong>{start}</strong>
       {end && (
         <>
           {" "}
@@ -95,21 +99,35 @@ const GuestSection = ({ numGuests }) => (
   </>
 );
 
-const GoogleFormSection = ({ ballot }) => (
+const PurchaseMethodSection = ({ googleForm, ballot }) => (
   <>
     <Typography variant="h4">Purchase method</Typography>
-    <BodyParagraph>
-      You will receive an email from Christ's College when the ticket sales
-      starts. Included in the email will be a link to a google form which you
-      can submit to request tickets.
-    </BodyParagraph>
-    {ballot && (
-      <BodyParagraph>
-        Tickets are distributed via a ballot. This means that by the end of the
-        sales period, if we received more requests than tickets available, we
-        will random selects tickets to be accepted.
-      </BodyParagraph>
+    {googleForm ? (
+      <>
+        <BodyParagraph>
+          You will receive an email from Christ's College when the ticket sales
+          starts. Included in the email will be a link to a google form which
+          you can submit to request for tickets.
+        </BodyParagraph>
+        {ballot && (
+          <BodyParagraph>
+            Tickets are distributed via a ballot. This means that by the end of
+            the sales period, if we received more requests than tickets
+            available, we will random selects tickets to be accepted.
+          </BodyParagraph>
+        )}
+      </>
+    ) : (
+      <>
+        <BodyParagraph>
+          Purchase links will be posted here and when sales starts.
+        </BodyParagraph>
+      </>
     )}
+    <BodyParagraph>
+      If you opt in to our charity donation, you will be entered into a raffle
+      to have your ticket refunded!
+    </BodyParagraph>
   </>
 );
 
@@ -149,40 +167,62 @@ export default function TicketsDisplay() {
             scrollButtons="auto"
           >
             <TicketTab label="Christ's JCR + MCR students" index={0} />
-            <TicketTab label="Other JCR + MCR students" index={1} />
+            <TicketTab label="Non-christ’s cambridge students" index={1} />
             <TicketTab label="Christ's 2021 graduates" index={2} />
             <TicketTab label="Christ's alumni" index={3} />
             <TicketTab label="Christ's staff & fellow" index={4} />
           </Tabs>
         </Box>
         <TicketTabPanel value={value} index={0}>
-          <FirstSection />
+          <FirstSection
+            standardPrice={160}
+            queueJumpPrice={175}
+            diningPrice={195}
+          />
           <AccessDescription />
           <SalesSection start="12:00 noon 29th January, 2022" />
           <GuestSection numGuests={2} />
+          <PurchaseMethodSection />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={1}>
-          <FirstSection />
+          <FirstSection
+            standardPrice={160}
+            queueJumpPrice={175}
+            diningPrice={195}
+          />
           <SalesSection start="12:00 noon 5th February, 2022" />
           <GuestSection numGuests={2} />
+          <PurchaseMethodSection />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={2}>
-          <FirstSection />
+          <FirstSection
+            standardPrice={160}
+            queueJumpPrice={175}
+            diningPrice={195}
+          />
           <SalesSection start="12th January, 2022" />
           <GuestSection numGuests={2} />
-          <GoogleFormSection />
+          <PurchaseMethodSection googleForm />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={3}>
-          <FirstSection />
+          <FirstSection
+            standardPrice={190}
+            queueJumpPrice={205}
+            diningPrice={225}
+          />
           <SalesSection start="12th January, 2022" end="30th January, 2022" />
           <GuestSection numGuests={1} />
-          <GoogleFormSection ballot />
+          <PurchaseMethodSection googleForm ballot />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={4}>
-          <FirstSection />
+          <FirstSection
+            standardPrice={190}
+            queueJumpPrice={205}
+            diningPrice={225}
+          />
           <SalesSection start="18th January, 2022" end="1st February, 2022" />
           <GuestSection numGuests={3} />
-          <GoogleFormSection ballot />
+          <PurchaseMethodSection googleForm ballot />
         </TicketTabPanel>
       </Box>
     </Box>
