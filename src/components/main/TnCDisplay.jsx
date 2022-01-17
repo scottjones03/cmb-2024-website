@@ -17,7 +17,7 @@ const TnCDisplay = () => (
     </Typography>
     <BodyParagraph>{data.intro}</BodyParagraph>
     {data.points.map((text, i) => (
-      <BodyParagraph mt={2}>
+      <BodyParagraph mt={2} key={i}>
         {i + 1}. {text}
       </BodyParagraph>
     ))}
