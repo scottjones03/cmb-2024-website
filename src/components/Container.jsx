@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 
-import bg from "../assets/img/2022/background.png";
+import bg from "../assets/img/2022/background_1_landscape.jpg";
 
 const Container = (props) => {
   return (

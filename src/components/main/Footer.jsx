@@ -6,7 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/EmailRounded";
 import Button from "@mui/material/Button";
 
-import logo from "../../assets/img/2022/prereveal-logo.png";
+import logo from "../../assets/img/2022/prereveal-logo-1.png";
 
 const FooterLink = ({ text, link, ...others }) => (
   <Button
@@ -27,7 +27,7 @@ const FooterLink = ({ text, link, ...others }) => (
 const Footer = () => (
   <Box pt={20} pb={10}>
     <Box display="flex" justifyContent="center">
-      <Box mx={1} mb={{ xs: 3, sm: 1 }}>
+      <Box mx={1} mb={3}>
         <IconButton
           color="tertiary"
           target="_blank"
@@ -92,7 +92,7 @@ const Footer = () => (
       >
         <Box
           component="img"
-          maxWidth={300}
+          maxWidth={250}
           width="100%"
           src={logo}
           alt="logo"
@@ -123,8 +123,7 @@ const Footer = () => (
           </Typography>
           <FooterLink
             text="Terms and conditions"
-            target="_blank"
-            href="https://ticketing.christsmayball.co.uk/build/public/terms-and-conditions.pdf"
+            link="/terms-and-conditions"
           />
         </Box>
       </Grid>

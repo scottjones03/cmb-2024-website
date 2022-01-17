@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Tab, Tabs, Box, Typography } from "@mui/material";
 
+import BodyParagraph from "../BodyParagraph";
 import TabPanel from "../TabPanel";
 import stone from "../../assets/img/2022/stone.png";
 
@@ -16,10 +17,6 @@ const TicketTab = ({ label, index, ...others }) => (
 
 const TicketTabPanel = (props) => (
   <TabPanel id="ticket-tabpanel" labelledby="ticket-tab" {...props} />
-);
-
-const BodyParagraph = (props) => (
-  <Typography variant="body1" gutterBottom {...props} />
 );
 
 const FirstSection = () => (
