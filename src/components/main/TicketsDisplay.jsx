@@ -123,10 +123,12 @@ export default function TicketsDisplay() {
   return (
     <Box mx="auto" maxWidth={1200}>
       <Box
-        borderRadius={1}
-        p={{ xs: 4, sm: 8 }}
+        borderRadius={{ xs: 0, sm: 1 }}
+        py={{ xs: 4, sm: 8 }}
+        px={{ xs: 4, sm: 10 }}
+        color={{ xs: "tertiary.main", sm: "inherit" }}
         sx={{
-          backgroundColor: { xs: "tertiary.main", sm: "inherit" },
+          backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
           backgroundImage: { xs: "inherit", sm: `url(${stone})` },
           backgroundSize: "100% 100%"
         }}
@@ -136,6 +138,13 @@ export default function TicketsDisplay() {
             value={value}
             onChange={handleChange}
             aria-label="ticket types tab"
+            textColor="inherit"
+            indicatorColor="primary"
+            TabIndicatorProps={{
+              sx: {
+                backgroundColor: { xs: "tertiary.main", sm: "primary.main" }
+              }
+            }}
             variant="scrollable"
             scrollButtons="auto"
           >

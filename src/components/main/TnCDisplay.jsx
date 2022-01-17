@@ -5,10 +5,10 @@ import data from "../../assets/data/terms-and-conditions.json";
 const TnCDisplay = () => (
   <Box
     p={5}
-    mt={3}
+    mt={{ xs: 0, sm: 3 }}
     mx="auto"
     maxWidth={1000}
-    borderRadius={1}
+    borderRadius={{ xs: 0, sm: 1 }}
     color="tertiary.main"
     sx={{ backgroundColor: "rgba(0,0,0,0.3)" }}
   >
