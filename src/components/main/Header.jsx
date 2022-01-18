@@ -7,7 +7,7 @@ import { Banner } from "../../assets/img";
 const pages = [
   { name: "Home", link: "/" },
   { name: "Tickets", link: "/tickets" },
-  { name: "Committee", link: "/" },
+  // { name: "Committee", link: "/" },
   // { name: "Sponsors", link: "" },
   { name: "Work for us", link: "/work-for-us" }
 ];

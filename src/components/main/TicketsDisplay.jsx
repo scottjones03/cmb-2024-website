@@ -19,7 +19,12 @@ const TicketTabPanel = (props) => (
   <TabPanel id="ticket-tabpanel" labelledby="ticket-tab" {...props} />
 );
 
-const FirstSection = ({ standardPrice, queueJumpPrice, diningPrice }) => (
+const FirstSection = ({
+  standardPrice,
+  queueJumpPrice,
+  diningPrice,
+  staff
+}) => (
   <>
     <Typography variant="h4">What's included in your ticket?</Typography>
     <BodyParagraph>
@@ -34,14 +39,23 @@ const FirstSection = ({ standardPrice, queueJumpPrice, diningPrice }) => (
       you get this exciting package. Below is information about what else comes
       with the different ticket types.
     </BodyParagraph>
-    <BodyParagraph>
-      <strong>Standard (£{standardPrice})</strong> – enjoy all of the above,
-      with standard entry to the ball at 21:00
-    </BodyParagraph>
-    <BodyParagraph>
-      <strong>Queue jump (£{queueJumpPrice})</strong> – priority entrance to the
-      Ball from 20:30 via a dedicated queue
-    </BodyParagraph>
+    {staff ? (
+      <BodyParagraph>
+        <strong>Standard (£{standardPrice})</strong> – enjoy all of the above,
+        with priority entry to the ball at 20:30
+      </BodyParagraph>
+    ) : (
+      <>
+        <BodyParagraph>
+          <strong>Standard (£{standardPrice})</strong> – enjoy all of the above,
+          with standard entry to the ball at 21:00
+        </BodyParagraph>
+        <BodyParagraph>
+          <strong>Queue jump (£{queueJumpPrice})</strong> – priority entrance to
+          the Ball from 20:30 via a dedicated queue
+        </BodyParagraph>
+      </>
+    )}
     <BodyParagraph>
       <strong>Dining (£{diningPrice})</strong> – arrive at 18:00 for a decadent
       four course meal in the Great Hall followed by instant entry to the Ball
@@ -57,7 +71,7 @@ const AccessDescription = () => (
       ticket choice and the Tutorial Office will confirm your status. The prices
       are{" "}
       <strong>
-        Access standard (£100), Access queue jump (£115) ,Access dining (£135)
+        Access standard (£100), Access queue jump (£115), Access dining (£135)
       </strong>
     </BodyParagraph>
   </>
@@ -215,11 +229,7 @@ export default function TicketsDisplay() {
           <PurchaseMethodSection googleForm ballot />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={4}>
-          <FirstSection
-            standardPrice={190}
-            queueJumpPrice={205}
-            diningPrice={225}
-          />
+          <FirstSection standardPrice={190} diningPrice={225} staff />
           <SalesSection start="18th January, 2022" end="1st February, 2022" />
           <GuestSection numGuests={3} />
           <PurchaseMethodSection googleForm ballot />
