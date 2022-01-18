@@ -229,7 +229,7 @@ export default function TicketsDisplay() {
           <PurchaseMethodSection googleForm ballot />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={4}>
-          <FirstSection standardPrice={190} diningPrice={225} staff />
+          <FirstSection standardPrice={80} diningPrice={110} staff />
           <SalesSection start="18th January, 2022" end="1st February, 2022" />
           <GuestSection numGuests={3} />
           <PurchaseMethodSection googleForm ballot />
