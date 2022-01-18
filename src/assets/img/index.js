@@ -4,4 +4,6 @@ import Logo from "./2022/prereveal-logo.png";
 import LogoMobile from "./2022/prereveal-logo-1.png";
 import Stone from "./2022/stone.png";
 
-export { Background, Banner, Logo, LogoMobile, Stone };
+import Iris from "./2022/headshots/Iris.png";
+
+export { Background, Banner, Logo, LogoMobile, Stone, Iris };
