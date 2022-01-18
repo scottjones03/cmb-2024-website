@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import WorkForUsPage from "./pages/WorkForUsPage";
 import TicketsPage from "./pages/TicketsPage";
@@ -10,6 +11,7 @@ import theme from "./theme";
 export default (
   <ThemeProvider theme={theme}>
     <BrowserRouter>
+      <ScrollToTop />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/work-for-us" component={WorkForUsPage} />
