@@ -2,12 +2,12 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import banner from "../../assets/img/2022/banner.png";
+import { Banner } from "../../assets/img";
 
 const pages = [
-  // { name: "Committee", link: "" },
   { name: "Home", link: "/" },
   { name: "Tickets", link: "/tickets" },
+  { name: "Committee", link: "/" },
   // { name: "Sponsors", link: "" },
   { name: "Work for us", link: "/work-for-us" }
 ];
@@ -48,8 +48,12 @@ export default function Header() {
               sx={{
                 fontWeight: 600,
                 fontSize: {
-                  xs: 20,
-                  md: 26
+                  xs: 16,
+                  sm: 26
+                },
+                px: {
+                  xs: 0.5,
+                  sm: 1.5
                 },
                 fontStyle: "italic"
               }}
@@ -60,7 +64,7 @@ export default function Header() {
             </Button>
           ))}
         </Box>
-        <Box component="img" src={banner} alt="banner" sx={{ width: "100%" }} />
+        <Box component="img" src={Banner} alt="banner" sx={{ width: "100%" }} />
       </Box>
     </Box>
   );

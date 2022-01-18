@@ -1,8 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 
-import logo from "../../assets/img/2022/prereveal-logo.png";
-import logoMobile from "../../assets/img/2022/prereveal-logo-1.png";
+import { Logo, LogoMobile } from "../../assets/img";
 
 export default function HomeDisplay() {
   return (
@@ -18,14 +17,14 @@ export default function HomeDisplay() {
         <Box
           display={{ xs: "none", sm: "inherit" }}
           component="img"
-          src={logo}
+          src={Logo}
           alt="logo"
           sx={{ width: "100%" }}
         />
         <Box
           display={{ xs: "inherit", sm: "none" }}
           component="img"
-          src={logoMobile}
+          src={LogoMobile}
           alt="logo"
           sx={{ width: "100%" }}
         />

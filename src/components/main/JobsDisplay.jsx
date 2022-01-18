@@ -17,14 +17,14 @@ import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/material/styles";
 
 import data from "../../assets/data/jobs.json";
-import stone from "../../assets/img/2022/stone.png";
+import { Stone } from "../../assets/img";
 
 const JobCard = styled(Card)(({ theme }) => ({
   maxWidth: 370,
   margin: "auto",
   padding: `${theme.spacing(4)} ${theme.spacing(3)}`,
   backgroundColor: "transparent",
-  backgroundImage: ` url(${stone})`,
+  backgroundImage: ` url(${Stone})`,
   backgroundSize: "100% 100%"
 }));
 

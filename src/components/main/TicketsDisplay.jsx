@@ -3,7 +3,7 @@ import { Tab, Tabs, Box, Typography } from "@mui/material";
 
 import BodyParagraph from "../BodyParagraph";
 import TabPanel from "../TabPanel";
-import stone from "../../assets/img/2022/stone.png";
+import { Stone } from "../../assets/img";
 
 const TicketTab = ({ label, index, ...others }) => (
   <Tab
@@ -147,7 +147,7 @@ export default function TicketsDisplay() {
         color={{ xs: "tertiary.main", sm: "inherit" }}
         sx={{
           backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
-          backgroundImage: { xs: "inherit", sm: `url(${stone})` },
+          backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
           backgroundSize: "100% 100%"
         }}
       >

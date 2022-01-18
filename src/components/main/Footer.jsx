@@ -6,7 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/EmailRounded";
 import Button from "@mui/material/Button";
 
-import logo from "../../assets/img/2022/prereveal-logo-1.png";
+import { Logo } from "../../assets/img";
 
 const FooterLink = ({ text, link, ...others }) => (
   <Button
@@ -94,7 +94,7 @@ const Footer = () => (
           component="img"
           maxWidth={250}
           width="100%"
-          src={logo}
+          src={Logo}
           alt="logo"
         />
       </Grid>
