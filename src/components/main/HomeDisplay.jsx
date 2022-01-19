@@ -1,5 +1,5 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
+import { Box, Typography } from "@mui/material";
 
 import { Logo, LogoMobile } from "../../assets/img";
 
@@ -29,6 +29,15 @@ export default function HomeDisplay() {
           sx={{ width: "100%" }}
         />
       </Box>
+      <Typography
+        variant="h2"
+        textAlign="center"
+        color="tertiary.main"
+        fontStyle="italic"
+        mt={3}
+      >
+        21 . 06 . 2022
+      </Typography>
     </Box>
   );
 }
