@@ -1,27 +1,84 @@
 import * as React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 
-import { Iris } from "../../assets/img";
-
-const dummy = [Iris, "Iris Toom", "Committee member"];
+import {
+  Clemmie,
+  Christina,
+  Eleanor,
+  Benji,
+  Camille,
+  Pippa,
+  Kiera,
+  Finton,
+  Sam,
+  Oliwia,
+  Iris,
+  Lucy,
+  Morgan,
+  Michelle,
+  Sophia,
+  Emily,
+  Andy,
+  DSCF4287,
+  Fergus,
+  Sophie,
+  Becca,
+  Mary
+} from "../../assets/img";
 
 const images = {
-  Presidents: [dummy, dummy],
-  "Art & Deisgn": [dummy, dummy, dummy],
-  "Webmaster & Ticketing": [dummy],
-  Staffing: [dummy, dummy, dummy, dummy, dummy]
+  Presidents: [
+    [Pippa, "Pippa Prendergast-Coates", "Co-president"],
+    [Sam, "Sam Grankin", "Co-president"]
+  ],
+  "Art & Deisgn": [
+    [Sophia, "Sophia Ashroff", "Head of Art & Design"],
+    [Sophie, "Sophie West", "Art & Design"],
+    [Iris, "Iiris Toom", "Art & Design"],
+    [Mary, "Mary Holmes", "Graphics"]
+  ],
+  Entertainments: [
+    [Clemmie, "Clemmie Butler Brown", "Head of Entertainments"],
+    [Morgan, "Morgan Roberts", "Entertainments"],
+    [Kiera, "Kiera Messenger", "Entertainments"]
+  ],
+  "Food & Drinks": [
+    [Becca, "Rebecca Tyson", "Head of Food & Drinks"],
+    [Eleanor, "Eleanor Burnett-Stuart", "Food"],
+    [Michelle, "Michelle Del Carretto", "Drinks"]
+  ],
+  "Green & Access": [[Camille, "Camille McCarthy", "Green & Access"]],
+  Logistics: [
+    [Oliwia, "Oliwia Stecko", "Head of Logistics"],
+    [Lucy, "Lucy Ivey", "Logistics"]
+  ],
+  "Sponsorship & Publicity": [[Christina, "Christina Lawrence", "Sponsorship"]],
+  "Staffing & Security": [
+    [Fergus, "Fergus Kirman", "Head of Staffing"],
+    [Finton, "Finton Hanks", "Security"],
+    [Emily, "Emily Wenban-Smith", "Security"]
+  ],
+  Treasurer: [[Benji, "Benji Holland", "Treasurer"]],
+  "Webmaster & Ticketing": [[Andy, "Andy Lo", "Webmaster & Ticketing"]]
 };
 
 const Member = ({ img, name, role, ...others }) => (
-  <Grid container item direction="column" justifyContent="center" {...others}>
+  <Grid container item direction="column" justifyContent="start" {...others}>
     <Grid item textAlign="center">
-      <Box component="img" maxWidth={250} width="100%" src={img} alt="logo" />
+      <Box
+        component="img"
+        maxWidth={300}
+        mb={2}
+        width="100%"
+        src={img}
+        alt="logo"
+      />
     </Grid>
     <Grid item textAlign="center">
-      <Typography fontSize={24}>{name}</Typography>
+      <Typography fontSize={30}>{name}</Typography>
     </Grid>
     <Grid item textAlign="center">
-      <Typography fontSize={20}>{role}</Typography>
+      <Typography fontSize={24}>{role}</Typography>
     </Grid>
   </Grid>
 );
@@ -33,29 +90,38 @@ export default function CommitteeDisplay() {
       pt={5}
       sx={{
         position: "relative",
-        maxWidth: 1000
+        maxWidth: 1200
       }}
     >
-      <Grid container color="tertiary.main" rowSpacing={10}>
-        {Object.entries(images).map(([key, value]) => {
-          console.log(value);
+      <Grid container color="tertiary.main" rowSpacing={5}>
+        {Object.entries(images).map(([key, value], i) => {
           return (
-            <Grid item container justifyContent="center" rowSpacing={2}>
-              <Grid itme xs={12} textAlign="center">
+            <Grid
+              item
+              container
+              justifyContent="center"
+              alignContent="start"
+              rowSpacing={2}
+              columnSpacing={5}
+              key={i}
+            >
+              <Grid item xs={12} textAlign="center">
                 <Typography variant="h3" gutterBottom>
                   {key}
                 </Typography>
               </Grid>
-              {value.map(([img, name, role], i) => (
-                <Member
-                  img={img}
-                  name={name}
-                  role={role}
-                  key={i}
-                  xs={12}
-                  sm={4}
-                />
-              ))}
+              {value.map(([img, name, role], j) => {
+                return (
+                  <Member
+                    img={img}
+                    name={name}
+                    role={role}
+                    key={j}
+                    xs={12}
+                    sm={4}
+                  />
+                );
+              })}
             </Grid>
           );
         })}
