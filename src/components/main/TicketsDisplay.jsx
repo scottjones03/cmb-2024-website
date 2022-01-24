@@ -142,6 +142,19 @@ const PurchaseMethodSection = ({ googleForm, ballot }) => (
       If you opt in to our charity donation, you will be entered into a raffle
       to have your ticket refunded!
     </BodyParagraph>
+    <BodyParagraph>
+      Once you receive a confirmation email of your ticket reservations, you
+      will have <strong>48 hours</strong> to perform bank transfers in order to
+      secure your ticket.
+    </BodyParagraph>
+    <BodyParagraph>
+      Please note that the buyer's ticket needs to be paid before we can approve
+      the guest tickets.
+      <strong>
+        If the buyer fails to pay for his / her own ticket, neither the buyer
+        nor the guests will get their tickets.
+      </strong>
+    </BodyParagraph>
   </>
 );
 
