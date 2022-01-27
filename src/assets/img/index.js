@@ -21,11 +21,13 @@ import Michelle from "./2022/headshots/Michelle.png";
 import Sophia from "./2022/headshots/Sophia.png";
 import Emily from "./2022/headshots/Emily.png";
 import Andy from "./2022/headshots/Andy.png";
-import DSCF4287 from "./2022/headshots/DSCF4287.png";
 import Fergus from "./2022/headshots/Fergus.png";
 import Sophie from "./2022/headshots/Sophie.png";
 import Becca from "./2022/headshots/Becca.png";
 import Mary from "./2022/headshots/Mary.png";
+import Charlotte from "./2022/headshots/Charlotte.png";
+import Rehan from "./2022/headshots/Rehan.png";
+import Koni from "./2022/headshots/Koni.png";
 
 export {
   Background,
@@ -50,9 +52,11 @@ export {
   Sophia,
   Emily,
   Andy,
-  DSCF4287,
   Fergus,
   Sophie,
   Becca,
-  Mary
+  Mary,
+  Charlotte,
+  Rehan,
+  Koni
 };

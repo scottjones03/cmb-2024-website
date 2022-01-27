@@ -19,11 +19,13 @@ import {
   Sophia,
   Emily,
   Andy,
-  DSCF4287,
   Fergus,
   Sophie,
   Becca,
-  Mary
+  Mary,
+  Charlotte,
+  Rehan,
+  Koni
 } from "../../assets/img";
 
 const images = {
@@ -35,6 +37,8 @@ const images = {
     [Sophia, "Sophia Ashroff", "Head of Art & Design"],
     [Sophie, "Sophie West", "Art & Design"],
     [Iris, "Iiris Toom", "Art & Design"],
+    [Charlotte, "Charlotte Evans", "Art & Design"],
+    [Koni, "Koni Borowiak", "Art & Design"],
     [Mary, "Mary Holmes", "Graphics"]
   ],
   Entertainments: [
@@ -50,7 +54,8 @@ const images = {
   "Green & Access": [[Camille, "Camille McCarthy", "Green & Access"]],
   Logistics: [
     [Oliwia, "Oliwia Stecko", "Head of Logistics"],
-    [Lucy, "Lucy Ivey", "Logistics"]
+    [Lucy, "Lucy Ivey", "Logistics"],
+    [Rehan, "Rehan Chagla", "Logistics"]
   ],
   "Sponsorship & Publicity": [[Christina, "Christina Lawrence", "Sponsorship"]],
   "Staffing & Security": [
