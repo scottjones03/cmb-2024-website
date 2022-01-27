@@ -7,6 +7,7 @@ import EmailIcon from "@mui/icons-material/EmailRounded";
 import Button from "@mui/material/Button";
 
 import { LogoMobile } from "../../assets/img";
+import handbook from "../../assets/docs/Accessibility-Handbook.pdf";
 
 const FooterLink = ({ text, link, ...others }) => (
   <Button
@@ -124,6 +125,11 @@ const Footer = () => (
           <FooterLink
             text="Terms and conditions"
             link="/terms-and-conditions"
+          />
+          <FooterLink
+            text="Accessibility handbook"
+            link={handbook}
+            target="_blank"
           />
         </Box>
       </Grid>
