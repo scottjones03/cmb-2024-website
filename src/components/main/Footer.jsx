@@ -126,11 +126,7 @@ const Footer = () => (
             text="Terms and conditions"
             link="/terms-and-conditions"
           />
-          <FooterLink
-            text="Accessibility handbook"
-            link={handbook}
-            target="_blank"
-          />
+          <FooterLink text="Access handbook" link={handbook} target="_blank" />
         </Box>
       </Grid>
     </Grid>
