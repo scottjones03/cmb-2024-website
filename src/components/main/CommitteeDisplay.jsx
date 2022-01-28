@@ -33,7 +33,7 @@ const images = {
     [Pippa, "Pippa Prendergast-Coates", "Co-president"],
     [Sam, "Sam Grankin", "Co-president"]
   ],
-  "Art & Deisgn": [
+  "Art & Design": [
     [Sophia, "Sophia Ashroff", "Head of Art & Design"],
     [Sophie, "Sophie West", "Art & Design"],
     [Iris, "Iiris Toom", "Art & Design"],
