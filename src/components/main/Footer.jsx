@@ -80,6 +80,7 @@ const Footer = () => (
           </Typography>
           <FooterLink text="Home" link="/" />
           <FooterLink text="Tickets" link="/tickets" />
+          <FooterLink text="Committee" link="/committee" />
           <FooterLink text="Work for us" link="/work-for-us" />
         </Box>
       </Grid>
