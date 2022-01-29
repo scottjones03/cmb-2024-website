@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Tab, Tabs, Box, Typography } from "@mui/material";
+import { Tab, Tabs, Box, Typography, Button } from "@mui/material";
 
 import BodyParagraph from "../BodyParagraph";
 import TabPanel from "../TabPanel";
@@ -134,7 +134,15 @@ const PurchaseMethodSection = ({ googleForm, ballot }) => (
     ) : (
       <>
         <BodyParagraph>
-          Purchase links will be posted here and when sales starts.
+          Please visit
+          <Button
+            sx={{ minWidth: 0, textTransform: "none" }}
+            href="https://ticketing.christsmayball.co.uk/"
+            target="_blank"
+          >
+            https://ticketing.christsmayball.co.uk/
+          </Button>
+          for instructions to purchase your ticket.
         </BodyParagraph>
       </>
     )}
