@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box, Typography } from "@mui/material";
 
-import { Logo, LogoMobile } from "../../assets/img";
+import { Logo } from "../../assets/img";
 
 export default function HomeDisplay() {
   return (
@@ -13,20 +13,12 @@ export default function HomeDisplay() {
         maxWidth: 1000
       }}
     >
-      <Box px={{ lg: 0, xs: 2 }}>
+      <Box px={{ lg: 0, xs: 2 }} textAlign="center">
         <Box
-          display={{ xs: "none", sm: "inherit" }}
           component="img"
           src={Logo}
           alt="logo"
-          sx={{ width: "100%" }}
-        />
-        <Box
-          display={{ xs: "inherit", sm: "none" }}
-          component="img"
-          src={LogoMobile}
-          alt="logo"
-          sx={{ width: "100%" }}
+          sx={{ width: "100%", maxWidth: { xs: "inherit", sm: 600 } }}
         />
       </Box>
       <Typography
