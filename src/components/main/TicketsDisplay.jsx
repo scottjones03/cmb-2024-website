@@ -67,7 +67,7 @@ const AccessDescription = () => (
   <>
     <BodyParagraph>
       <strong>Access tickets</strong> – Christ's is very proud to be offering
-      Access tickets this year to any UK undergraduate students in receipt of a
+      Access tickets this year to any undergraduate students in receipt of a
       Cambridge Bursary. Select these as your ticket choice and the Tutorial
       Office will confirm your status. The prices are{" "}
       <strong>
