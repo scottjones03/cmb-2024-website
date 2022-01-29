@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import { Logo } from "../../assets/img";
 
@@ -30,6 +31,20 @@ export default function HomeDisplay() {
       >
         21 . 06 . 2022
       </Typography>
+      <Box textAlign="center">
+        <Button href="https://ticketing.christsmayball.co.uk/" target="_blank">
+          <Typography
+            variant="h4"
+            textAlign="center"
+            color="tertiary.main"
+            fontStyle="italic"
+            mt={3}
+          >
+            Christ's Students can get tickets now!
+            <ChevronRightIcon sx={{ fontSize: 50, verticalAlign: "bottom" }} />
+          </Typography>
+        </Button>
+      </Box>
     </Box>
   );
 }
