@@ -241,7 +241,7 @@ export default function TicketsDisplay() {
         </TicketTabPanel>
         <TicketTabPanel value={value} index={3}>
           <FirstSection
-            standardPrice={190}
+            standardPrice={195}
             queueJumpPrice={205}
             diningPrice={225}
           />
