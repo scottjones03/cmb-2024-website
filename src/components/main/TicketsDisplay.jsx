@@ -67,12 +67,26 @@ const AccessDescription = () => (
   <>
     <BodyParagraph>
       <strong>Access tickets</strong> – Christ's is very proud to be offering
-      Access tickets this year to any undergraduate students in receipt of a
-      Cambridge Bursary. Select these as your ticket choice and the Tutorial
-      Office will confirm your status. The prices are{" "}
+      Access tickets this year. You are eligible for access tickets if you are a
+      Christ’s JCR students on <strong>the Cambridge Bursary</strong> , full or
+      partial, or a Christ’s MCR students on <strong>College Bursaries</strong>.
+      Select these as your ticket choice and the Tutorial Office will
+      confidentially confirm your status. The prices are{" "}
       <strong>
         Access standard (£100), Access queue jump (£115), Access dining (£135)
       </strong>
+    </BodyParagraph>
+    <BodyParagraph>
+      If you have already purchased a full-price ticket but are eligible for an
+      Access ticket, please get in touch here:
+      <Button
+        sx={{ minWidth: 0, textTransform: "none" }}
+        href="mailto:webmaster@christsmayball.co.uk"
+        target="_blank"
+      >
+        webmaster@christsmayball.co.uk
+      </Button>
+      , and we will sort a refund out for you.
     </BodyParagraph>
   </>
 );
