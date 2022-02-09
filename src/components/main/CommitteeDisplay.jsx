@@ -59,7 +59,7 @@ const images = {
   ],
   "Sponsorship & Publicity": [[Christina, "Christina Lawrence", "Sponsorship"]],
   "Staffing & Security": [
-    [Fergus, "Fergus Kirman", "Head of Staffing"],
+    [Fergus, "Fergus Kirman", "Head of Staffing & Security"],
     [Finton, "Finton Hanks", "Security"],
     [Emily, "Emily Wenban-Smith", "Security"]
   ],
