@@ -40,7 +40,7 @@ export default function HomeDisplay() {
             fontStyle="italic"
             mt={3}
           >
-            Christ's Students can get tickets now!
+            Join the waitlist for any remaining tickets!
             <ChevronRightIcon sx={{ fontSize: 50, verticalAlign: "bottom" }} />
           </Typography>
         </Button>
