@@ -130,7 +130,10 @@ const GuestSection = ({ numGuests }) => (
 const PurchaseMethodSection = ({ googleForm, ballot }) => (
   <>
     <Typography variant="h4">Purchase method</Typography>
-    {googleForm ? (
+    <BodyParagraph>
+      Tickets have now sold out, thank you for your support!
+    </BodyParagraph>
+    {/* {googleForm ? (
       <>
         <BodyParagraph>
           You will receive an email from Christ's College when the ticket sales
@@ -176,7 +179,7 @@ const PurchaseMethodSection = ({ googleForm, ballot }) => (
         If the buyer fails to pay for his / her own ticket, neither the buyer
         nor the guests will get their tickets.
       </strong>
-    </BodyParagraph>
+    </BodyParagraph> */}
   </>
 );
 

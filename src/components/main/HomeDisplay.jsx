@@ -32,18 +32,15 @@ export default function HomeDisplay() {
         21 . 06 . 2022
       </Typography>
       <Box textAlign="center">
-        <Button href="https://ticketing.christsmayball.co.uk/" target="_blank">
-          <Typography
-            variant="h4"
-            textAlign="center"
-            color="tertiary.main"
-            fontStyle="italic"
-            mt={3}
-          >
-            Join the waitlist for any remaining tickets!
-            <ChevronRightIcon sx={{ fontSize: 50, verticalAlign: "bottom" }} />
-          </Typography>
-        </Button>
+        <Typography
+          variant="h4"
+          textAlign="center"
+          color="tertiary.main"
+          fontStyle="italic"
+          mt={3}
+        >
+          Tickets have sold out, thank you for your support!
+        </Typography>
       </Box>
     </Box>
   );
