@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Box, Typography, Button } from "@mui/material";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import { Box, Typography } from "@mui/material";
 
 import { Logo } from "../../assets/img";
 
