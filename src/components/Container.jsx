@@ -1,7 +1,5 @@
 import Box from "@mui/material/Box";
 
-import bg from "../assets/img/2022/background-1-landscape.jpg";
-
 const Container = (props) => {
   return (
     <Box
@@ -9,11 +7,6 @@ const Container = (props) => {
       minHeight="100vh"
       boxSizing="border-box"
       overflow="hidden"
-      sx={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed"
-      }}
       {...props}
     />
   );
