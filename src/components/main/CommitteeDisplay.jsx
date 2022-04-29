@@ -25,7 +25,8 @@ import {
   Mary,
   Charlotte,
   Rehan,
-  Koni
+  Koni,
+  Cicely
 } from "../../assets/img";
 
 const images = {
@@ -57,7 +58,10 @@ const images = {
     [Lucy, "Lucy Ivey", "Logistics"],
     [Rehan, "Rehan Chagla", "Logistics"]
   ],
-  "Sponsorship & Publicity": [[Christina, "Christina Lawrence", "Sponsorship"]],
+  "Sponsorship & Publicity": [
+    [Christina, "Christina Lawrence", "Sponsorship"],
+    [Cicely, "Cicely Norman", "Publicity"]
+  ],
   "Staffing & Security": [
     [Fergus, "Fergus Kirman", "Head of Staffing & Security"],
     [Finton, "Finton Hanks", "Staffing"],
