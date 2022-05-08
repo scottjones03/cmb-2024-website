@@ -67,7 +67,7 @@ const JobItem = ({ name, description, numHours, pay, needsInterview }) => (
         }}
         size="small"
         target="_blank"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdbfms9x-u7-jHRoFutQzgy2peNn5esjXBuDa6IdFuleyZSfA/viewform"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSesejqkbR6aI8JlYs39k3FhvZieSQTBXa6Ch6e62amlXU4t_A/viewform"
       >
         Apply
       </Button>
