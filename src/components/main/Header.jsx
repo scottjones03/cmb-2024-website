@@ -8,8 +8,8 @@ const pages = [
   { name: "Home", link: "/" },
   { name: "Tickets", link: "/tickets" },
   { name: "Committee", link: "/committee" },
-  // { name: "Sponsors", link: "" },
-  { name: "Work for us", link: "/work-for-us" }
+  { name: "Sponsors", link: "/sponsors" }
+  // { name: "Work for us", link: "/work-for-us" }
 ];
 
 export default function Header() {

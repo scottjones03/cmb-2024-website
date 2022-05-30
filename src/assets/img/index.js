@@ -30,6 +30,12 @@ import Rehan from "./2022/headshots/Rehan.png";
 import Koni from "./2022/headshots/Koni.png";
 import Cicely from "./2022/headshots/Cicely.png";
 
+import Tailor from "./2022/sponsors/cambridge-tailors.jpg";
+import GrannyMa from "./2022/sponsors/granny-ma.jpg";
+import HireStreet from "./2022/sponsors/hire-street.jpg";
+import SeanhannaOne from "./2022/sponsors/seanhanna-1.jpg";
+import SeanhannaTwo from "./2022/sponsors/seanhanna-2.jpg";
+
 export {
   Background,
   Banner,
@@ -60,5 +66,10 @@ export {
   Charlotte,
   Rehan,
   Koni,
-  Cicely
+  Cicely,
+  Tailor,
+  GrannyMa,
+  HireStreet,
+  SeanhannaOne,
+  SeanhannaTwo
 };

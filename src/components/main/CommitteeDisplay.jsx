@@ -29,7 +29,7 @@ import {
   Cicely
 } from "../../assets/img";
 
-const images = {
+const data = {
   Presidents: [
     [Pippa, "Pippa Prendergast-Coates", "Co-president"],
     [Sam, "Sam Grankin", "Co-president"]
@@ -103,7 +103,7 @@ export default function CommitteeDisplay() {
       }}
     >
       <Grid container color="tertiary.main" rowSpacing={5}>
-        {Object.entries(images).map(([key, value], i) => {
+        {Object.entries(data).map(([key, value], i) => {
           return (
             <Grid
               item
