@@ -1,15 +1,9 @@
 import * as React from "react";
 
-import { Link } from "react-router-dom";
-import { Box, Grid, Typography, Button } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
-import { data as TailorData } from "../../pages/sponsors/TailorPage";
-import { data as SeanhannaData } from "../../pages/sponsors/Seanhannapage";
-import { data as RedBullData } from "../../pages/sponsors/RedBull";
-import { data as HireStreetData } from "../../pages/sponsors/HireStreetPage";
-import { data as GrannyData } from "../../pages/sponsors/GrannyMaBubbleTeaPage";
-
-let data = [TailorData, SeanhannaData, RedBullData, HireStreetData, GrannyData];
+import { NoStyleLink } from "../../components";
+import { data } from "../../pages/sponsors";
 
 export default function SponsorDisplay() {
   return (
@@ -18,7 +12,7 @@ export default function SponsorDisplay() {
       pt={5}
       sx={{
         position: "relative",
-        maxWidth: 1200
+        maxWidth: 800
       }}
       px={3}
     >
@@ -38,24 +32,14 @@ export default function SponsorDisplay() {
               alignContent="center"
               key={i}
               sm={6}
-              md={4}
+              md={6}
             >
-              <Button
-                key={name}
-                color="tertiary"
-                size="large"
-                disableElevation
-                LinkComponent={Link}
-                to={link}
-                sx={{
-                  textTransform: "none"
-                }}
-              >
+              <NoStyleLink to={link}>
                 <Typography fontSize={30} gutterBottom textAlign="center">
                   {name}
                 </Typography>
-              </Button>
-              <Box component="img" width="100%" src={img} alt="logo" />
+                <Box component="img" width="100%" src={img} alt="logo" />
+              </NoStyleLink>
             </Grid>
           );
         })}

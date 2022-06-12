@@ -1,8 +1,6 @@
 import React from "react";
-import Container from "../components/Container";
-import Header from "../components/main/Header";
-import Footer from "../components/main/Footer";
-import HomeDisplay from "../components/main/HomeDisplay";
+import { Footer, Header, Container } from "../components";
+import { HomeDisplay } from "../components/main";
 
 export default function HomePage() {
   return (

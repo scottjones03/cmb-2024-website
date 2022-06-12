@@ -1,23 +1,21 @@
-import CommitteeDisplay from "./main/CommitteeDisplay";
-import Footer from "./main/Footer";
-import Header from "./main/Header";
-import HomeDisplay from "./main/HomeDisplay";
-import JobsDisplay from "./main/JobsDisplay";
-import Sponsor from "./main/Sponsor";
-import SponsorDisplay from "./main/SponsorDisplay";
-import TicketsDisplay from "./main/TicketsDisplay";
-import TnCDisplay from "./main/TnCDisplay";
+import Footer from "./Footer";
+import Header from "./Header";
+import Sponsor from "./Sponsor";
 import Container from "./Container";
+import NoStyleLink from "./NoStyleLink";
+import BodyParagraph from "./BodyParagraph";
+import Filler from "./Filler";
+import ImageBox from "./ImageBox";
+import TabPanel from "./TabPanel";
 
 export {
-  CommitteeDisplay,
   Footer,
   Header,
-  HomeDisplay,
-  JobsDisplay,
   Sponsor,
-  SponsorDisplay,
-  TicketsDisplay,
-  TnCDisplay,
-  Container
+  Container,
+  NoStyleLink,
+  BodyParagraph,
+  Filler,
+  ImageBox,
+  TabPanel
 };

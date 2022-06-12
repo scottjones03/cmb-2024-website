@@ -1,8 +1,6 @@
 import React from "react";
-import Container from "../components/Container";
-import Header from "../components/main/Header";
-import Footer from "../components/main/Footer";
-import TicketsDisplay from "../components/main/TicketsDisplay";
+import { Footer, Header, Container } from "../components";
+import { TicketsDisplay } from "../components/main";
 
 export default function TicketsPage() {
   return (

@@ -1,13 +1,12 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { Box, Typography, IconButton, Grid } from "@mui/material";
+import { Box, Typography, IconButton, Grid, Button } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/EmailRounded";
-import Button from "@mui/material/Button";
 
-import { LogoMobile } from "../../assets/img";
-import handbook from "../../assets/docs/Accessibility-Handbook.pdf";
+import { LogoMobile } from "../assets/img";
+import handbook from "../assets/docs/Accessibility-Handbook.pdf";
 
 const FooterLink = ({ text, link, ...others }) => (
   <Button

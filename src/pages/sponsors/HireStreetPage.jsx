@@ -4,7 +4,7 @@ import { Container, Header, Footer, Sponsor } from "../../components";
 import { HireStreet } from "../../assets/img";
 
 export const data = {
-  name: "HireStreet",
+  name: "Hirestreet",
   text: [
     "Hirestreet is a fashion rental platform committed to making style and sustainability accessible for all women. They strive to build a community of empowered individuals, with inclusivity, creativity and care for our planet at the forefront of everything we do."
   ],
