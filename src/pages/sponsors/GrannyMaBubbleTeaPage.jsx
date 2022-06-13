@@ -8,7 +8,7 @@ export const data = {
   text: [
     "Come down to Granny Ma's Bubble tea at the market for some refreshing bubble tea!",
     "Granny Ma pride themselves on their fruity and zingy flavours and eco-friendly mindset.",
-    "On your way back from a lecture?Milling about on King's Parade? Why don't you check out Granny Ma's Bubble tea, for a range of vibrant pearls and teas to choose from."
+    "On your way back from a lecture? Milling about on King's Parade? Why don't you check out Granny Ma's Bubble tea, for a range of vibrant pearls and teas to choose from."
   ],
   img: GrannyMa,
   imgMaxWidth: 400,
