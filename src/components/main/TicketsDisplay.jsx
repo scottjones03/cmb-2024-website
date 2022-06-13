@@ -91,21 +91,21 @@ const AccessDescription = () => (
   </>
 );
 
-const SalesSection = ({ start, end }) => (
-  <>
-    <Typography variant="h4">Sales date</Typography>
-    <BodyParagraph>
-      Ticket sale starts at <strong>{start}</strong>
-      {end && (
-        <>
-          {" "}
-          and ends at <strong>{end}</strong>
-        </>
-      )}
-      .
-    </BodyParagraph>
-  </>
-);
+// const SalesSection = ({ start, end }) => (
+//   <>
+//     <Typography variant="h4">Sales date</Typography>
+//     <BodyParagraph>
+//       Ticket sale starts at <strong>{start}</strong>
+//       {end && (
+//         <>
+//           {" "}
+//           and ends at <strong>{end}</strong>
+//         </>
+//       )}
+//       .
+//     </BodyParagraph>
+//   </>
+// );
 
 const GuestSection = ({ numGuests }) => (
   <>
