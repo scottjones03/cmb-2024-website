@@ -183,6 +183,19 @@ const PurchaseMethodSection = ({ googleForm, ballot }) => (
   </>
 );
 
+const DressCodeSection = () => (
+  <>
+    <Typography variant="h4">Dress code</Typography>
+    <BodyParagraph>
+      The dress code for the ball is black tie. Standard black tie consists of
+      either a dinner jacket (identifiable by its shiny lapels) with trousers, a
+      bow-tie, and a white shirt, or a long evening gown. Guests can use their
+      discretion as to other equally black-tie appropriate attires (this may
+      include formal jumpsuits, for example). White tie and national dress are
+      also permitted. Sports blazers are not permitted.
+    </BodyParagraph>
+  </>
+);
 export default function TicketsDisplay() {
   const [value, setValue] = React.useState(0);
 
@@ -232,7 +245,8 @@ export default function TicketsDisplay() {
             diningPrice={195}
           />
           <AccessDescription />
-          <SalesSection start="12:00 noon 29th January, 2022" />
+          <DressCodeSection />
+          {/* <SalesSection start="12:00 noon 29th January, 2022" /> */}
           <GuestSection numGuests={2} />
           <PurchaseMethodSection />
         </TicketTabPanel>
@@ -242,7 +256,8 @@ export default function TicketsDisplay() {
             queueJumpPrice={175}
             diningPrice={195}
           />
-          <SalesSection start="12:00 noon 5th February, 2022" />
+          <DressCodeSection />
+          {/* <SalesSection start="12:00 noon 5th February, 2022" /> */}
           <GuestSection numGuests={2} />
           <PurchaseMethodSection />
         </TicketTabPanel>
@@ -252,7 +267,8 @@ export default function TicketsDisplay() {
             queueJumpPrice={175}
             diningPrice={195}
           />
-          <SalesSection start="12th January, 2022" />
+          <DressCodeSection />
+          {/* <SalesSection start="12th January, 2022" /> */}
           <GuestSection numGuests={2} />
           <PurchaseMethodSection googleForm />
         </TicketTabPanel>
@@ -262,13 +278,15 @@ export default function TicketsDisplay() {
             queueJumpPrice={205}
             diningPrice={225}
           />
-          <SalesSection start="12th January, 2022" end="30th January, 2022" />
+          <DressCodeSection />
+          {/* <SalesSection start="12th January, 2022" end="30th January, 2022" /> */}
           <GuestSection numGuests={1} />
           <PurchaseMethodSection googleForm ballot />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={4}>
           <FirstSection standardPrice={80} diningPrice={110} staff />
-          <SalesSection start="18th January, 2022" end="1st February, 2022" />
+          <DressCodeSection />
+          {/* <SalesSection start="18th January, 2022" end="1st February, 2022" /> */}
           <GuestSection numGuests={3} />
           <PurchaseMethodSection googleForm ballot />
         </TicketTabPanel>
