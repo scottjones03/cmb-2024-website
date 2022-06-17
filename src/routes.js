@@ -17,6 +17,7 @@ import {
 import ScrollToTop from "./components/ScrollToTop";
 
 import theme from "./theme";
+import InfoPage from "./pages/InfoPage";
 
 export default (
   <ThemeProvider theme={theme}>
@@ -41,6 +42,7 @@ export default (
         />
         <Route exact path="/tickets" component={TicketsPage} />
         <Route exact path="/terms-and-conditions" component={TnCPage} />
+        <Route exact path="/info" component={InfoPage} />
         <Route exact path="/committee" component={CommitteePage} />
       </Switch>
     </BrowserRouter>

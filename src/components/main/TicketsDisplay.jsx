@@ -1,9 +1,11 @@
 import * as React from "react";
 import { Tab, Tabs, Box, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 import BodyParagraph from "../BodyParagraph";
 import TabPanel from "../TabPanel";
 import { Stone } from "../../assets/img";
+import { OpenInNew } from "@mui/icons-material";
 
 const TicketTab = ({ label, index, ...others }) => (
   <Tab
@@ -119,69 +121,66 @@ const GuestSection = ({ numGuests }) => (
       when buying your own ticket.
     </BodyParagraph>
     <BodyParagraph>
-      Christ’s May Ball is keen to welcome you and your guests – which is why we
-      have made guest tickets no more expensive than Christ’s member ones.
+      Christ's May Ball is keen to welcome you and your guests - which is why we
+      have made guest tickets no more expensive than Christ's member ones.
       Please do feel encouraged to bring along your friends from other Colleges
       and from outside the University! Note everyone must be 18+.
     </BodyParagraph>
   </>
 );
 
-const PurchaseMethodSection = ({ googleForm, ballot }) => (
-  <>
-    <Typography variant="h4">Purchase method</Typography>
-    <BodyParagraph>
-      Tickets have now sold out, thank you for your support!
-    </BodyParagraph>
-    {/* {googleForm ? (
-      <>
-        <BodyParagraph>
-          You will receive an email from Christ's College when the ticket sales
-          starts. Included in the email will be a link to a google form which
-          you can submit to request for tickets.
-        </BodyParagraph>
-        {ballot && (
-          <BodyParagraph>
-            Tickets are distributed via a ballot. This means that by the end of
-            the sales period, if we received more requests than tickets
-            available, we will random selects tickets to be accepted.
-          </BodyParagraph>
-        )}
-      </>
-    ) : (
-      <>
-        <BodyParagraph>
-          Please visit
-          <Button
-            sx={{ minWidth: 0, textTransform: "none" }}
-            href="https://ticketing.christsmayball.co.uk/"
-            target="_blank"
-          >
-            https://ticketing.christsmayball.co.uk/
-          </Button>
-          for instructions to purchase your ticket.
-        </BodyParagraph>
-      </>
-    )}
-    <BodyParagraph>
-      If you opt in to our charity donation, you will be entered into a raffle
-      to have your ticket refunded!
-    </BodyParagraph>
-    <BodyParagraph>
-      Once you receive a confirmation email of your ticket reservations, you
-      will have <strong>48 hours</strong> to perform bank transfers in order to
-      secure your ticket.
-    </BodyParagraph>
-    <BodyParagraph>
-      Please note that the buyer's ticket needs to be paid before we can approve
-      the guest tickets.
-      <strong>
-        If the buyer fails to pay for his / her own ticket, neither the buyer
-        nor the guests will get their tickets.
-      </strong>
-    </BodyParagraph> */}
-  </>
-);
+// const PurchaseMethodSection = ({ googleForm, ballot }) => (
+//   <>
+//     <Typography variant="h4">Purchase method</Typography>
+//     {googleForm ? (
+//       <>
+//         <BodyParagraph>
+//           You will receive an email from Christ's College when the ticket sales
+//           starts. Included in the email will be a link to a google form which
+//           you can submit to request for tickets.
+//         </BodyParagraph>
+//         {ballot && (
+//           <BodyParagraph>
+//             Tickets are distributed via a ballot. This means that by the end of
+//             the sales period, if we received more requests than tickets
+//             available, we will random selects tickets to be accepted.
+//           </BodyParagraph>
+//         )}
+//       </>
+//     ) : (
+//       <>
+//         <BodyParagraph>
+//           Please visit
+//           <Button
+//             sx={{ minWidth: 0, textTransform: "none" }}
+//             href="https://ticketing.christsmayball.co.uk/"
+//             target="_blank"
+//           >
+//             https://ticketing.christsmayball.co.uk/
+//           </Button>
+//           for instructions to purchase your ticket.
+//         </BodyParagraph>
+//       </>
+//     )}
+//     <BodyParagraph>
+//       If you opt in to our charity donation, you will be entered into a raffle
+//       to have your ticket refunded!
+//     </BodyParagraph>
+//     <BodyParagraph>
+//       Once you receive a confirmation email of your ticket reservations, you
+//       will have <strong>48 hours</strong> to perform bank transfers in order to
+//       secure your ticket.
+//     </BodyParagraph>
+//     <BodyParagraph>
+//       Please note that the buyer's ticket needs to be paid before we can approve
+//       the guest tickets.
+//       <strong>
+//         If the buyer fails to pay for his / her own ticket, neither the buyer
+//         nor the guests will get their tickets.
+//       </strong>
+//     </BodyParagraph>
+//   </>
+// );
 
 const DressCodeSection = () => (
   <>
@@ -196,6 +195,27 @@ const DressCodeSection = () => (
     </BodyParagraph>
   </>
 );
+
+const DetailedInfoSection = () => (
+  <>
+    <Typography variant="h4">Detailed information</Typography>
+    <BodyParagraph>
+      More information about the ball is available{" "}
+      <Button
+        color="primary"
+        size="small"
+        variant="text"
+        LinkComponent={Link}
+        to="/info"
+        sx={{ textTransform: "none", fontWeight: "bold", minWidth: 0 }}
+        endIcon={<OpenInNew />}
+      >
+        Here
+      </Button>
+    </BodyParagraph>
+  </>
+);
+
 export default function TicketsDisplay() {
   const [value, setValue] = React.useState(0);
 
@@ -248,7 +268,8 @@ export default function TicketsDisplay() {
           <DressCodeSection />
           {/* <SalesSection start="12:00 noon 29th January, 2022" /> */}
           <GuestSection numGuests={2} />
-          <PurchaseMethodSection />
+          {/* <PurchaseMethodSection /> */}
+          <DetailedInfoSection />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={1}>
           <FirstSection
@@ -259,7 +280,8 @@ export default function TicketsDisplay() {
           <DressCodeSection />
           {/* <SalesSection start="12:00 noon 5th February, 2022" /> */}
           <GuestSection numGuests={2} />
-          <PurchaseMethodSection />
+          {/* <PurchaseMethodSection /> */}
+          <DetailedInfoSection />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={2}>
           <FirstSection
@@ -270,7 +292,8 @@ export default function TicketsDisplay() {
           <DressCodeSection />
           {/* <SalesSection start="12th January, 2022" /> */}
           <GuestSection numGuests={2} />
-          <PurchaseMethodSection googleForm />
+          {/* <PurchaseMethodSection googleForm /> */}
+          <DetailedInfoSection />
         </TicketTabPanel>
         <TicketTabPanel value={value} index={3}>
           <FirstSection
@@ -281,14 +304,15 @@ export default function TicketsDisplay() {
           <DressCodeSection />
           {/* <SalesSection start="12th January, 2022" end="30th January, 2022" /> */}
           <GuestSection numGuests={1} />
-          <PurchaseMethodSection googleForm ballot />
+          {/* <PurchaseMethodSection googleForm ballot /> */}
         </TicketTabPanel>
         <TicketTabPanel value={value} index={4}>
           <FirstSection standardPrice={80} diningPrice={110} staff />
           <DressCodeSection />
           {/* <SalesSection start="18th January, 2022" end="1st February, 2022" /> */}
           <GuestSection numGuests={3} />
-          <PurchaseMethodSection googleForm ballot />
+          {/* <PurchaseMethodSection googleForm ballot /> */}
+          <DetailedInfoSection />
         </TicketTabPanel>
       </Box>
     </Box>

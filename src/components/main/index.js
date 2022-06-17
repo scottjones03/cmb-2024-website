@@ -4,6 +4,7 @@ import JobsDisplay from "./JobsDisplay";
 import SponsorDisplay from "./SponsorDisplay";
 import TicketsDisplay from "./TicketsDisplay";
 import TnCDisplay from "./TnCDisplay";
+import InfoDisplay from "./InfoDisplay";
 
 export {
   CommitteeDisplay,
@@ -11,5 +12,6 @@ export {
   JobsDisplay,
   SponsorDisplay,
   TicketsDisplay,
-  TnCDisplay
+  TnCDisplay,
+  InfoDisplay
 };

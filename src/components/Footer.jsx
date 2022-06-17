@@ -128,6 +128,7 @@ const Footer = () => (
           />
           <FooterLink text="Access handbook" link={handbook} target="_blank" />
           <FooterLink text="Work for us" link="/work-for-us" />
+          <FooterLink text="Detailed info" link="/info" />
         </Box>
       </Grid>
     </Grid>
