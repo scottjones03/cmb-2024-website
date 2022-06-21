@@ -6,7 +6,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/EmailRounded";
 
 import { LogoMobile } from "../assets/img";
-import handbook from "../assets/docs/Accessibility-Handbook.pdf";
 
 const FooterLink = ({ text, link, ...others }) => (
   <Button
@@ -126,7 +125,16 @@ const Footer = () => (
             text="Terms and conditions"
             link="/terms-and-conditions"
           />
-          <FooterLink text="Access handbook" link={handbook} target="_blank" />
+          <FooterLink
+            text="Access handbook"
+            link={process.env.PUBLIC_URL + "/Accessibility-Handbook.pdf"}
+            target="_blank"
+          />
+          <FooterLink
+            text="Programme"
+            link={process.env.PUBLIC_URL + "/Programme.pdf"}
+            target="_blank"
+          />
           <FooterLink text="Work for us" link="/work-for-us" />
           <FooterLink text="Detailed information" link="/info" />
         </Box>
