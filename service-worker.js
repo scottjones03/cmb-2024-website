@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cmb-2024-website/precache-manifest.fd0cd0863d2f01743054223499b9356d.js"
+  "/cmb-2024-website/precache-manifest.8f7f3a35aef375bbf62a3709a9150caa.js"
 );
 
 workbox.clientsClaim();
