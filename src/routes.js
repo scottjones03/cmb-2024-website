@@ -1,23 +1,8 @@
-import React from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "@mui/material/styles";
-import {
-  HomePage,
-  WorkForUsPage,
-  TicketsPage,
-  TnCPage,
-  CommitteePage,
-  SponsorPage,
-  TestSponsorPage
-} from "./pages";
-import ScrollToTop from "./components/ScrollToTop";
-
-import theme from "./theme";
-import InfoPage from "./pages/InfoPage";
+import { HashRouter as Router } from "react-router-dom";
 
 export default (
   <ThemeProvider theme={theme}>
-    <BrowserRouter>
+    <Router>
       <ScrollToTop />
       <Switch>
         <Route exact path="/" component={HomePage} />
@@ -33,6 +18,6 @@ export default (
         <Route exact path="/info" component={InfoPage} />
         <Route exact path="/committee" component={CommitteePage} />
       </Switch>
-    </BrowserRouter>
+    </Router>
   </ThemeProvider>
 );
