@@ -1,8 +1,8 @@
 {
-  "homepage": "http://christsmayball.co.uk",
+  "homepage": "http://scottjones03.github.io/cmb-2024-website",
   "name": "cmb-2024-website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@emotion/react": "^11.7.0",
