@@ -15,11 +15,12 @@ const pages = [
 export default function Header() {
   return (
     <Box
-      zIndex={100}
       sx={{
         display: "flex",
         justifyContent: "center",
-        width: "100%"
+        width: "100%",
+        height: "100%",
+
       }}
     >
       <Box

@@ -1,3 +1,4 @@
+import * as React  from 'react';
 import { Box } from "@mui/material";
 
 const TabPanel = ({ children, value, index, id, labelledby, ...other }) => (

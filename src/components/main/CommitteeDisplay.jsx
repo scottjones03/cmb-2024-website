@@ -2,77 +2,17 @@ import * as React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 
 import {
-  Clemmie,
-  Christina,
-  Eleanor,
-  Benji,
-  Camille,
-  Pippa,
-  Kiera,
-  Finton,
-  Sam,
-  Oliwia,
-  Iris,
-  Lucy,
-  Morgan,
-  Michelle,
-  Sophia,
-  Emily,
-  Andy,
-  Fergus,
-  Sophie,
-  Becca,
-  Mary,
-  Charlotte,
-  Rehan,
-  Koni,
-  Cicely
+  Scott
 } from "../../assets/img";
+import { Stone } from "../../assets/img";
 
 const data = {
-  Presidents: [
-    [Pippa, "Pippa Prendergast-Coates", "Co-president"],
-    [Sam, "Sam Grankin", "Co-president"]
-  ],
-  "Art & Design": [
-    [Sophia, "Sophia Ashroff", "Head of Art & Design"],
-    [Sophie, "Sophie West", "Art & Design"],
-    [Iris, "Iiris Toom", "Art & Design"],
-    [Charlotte, "Charlotte Evans", "Art & Design"],
-    [Koni, "Koni Borowiak", "Art & Design"],
-    [Mary, "Mary Holmes", "Graphics"]
-  ],
-  Entertainments: [
-    [Clemmie, "Clemmie Butler Brown", "Head of Entertainments"],
-    [Morgan, "Morgan Roberts", "Entertainments"],
-    [Kiera, "Kiera Messenger", "Entertainments"]
-  ],
-  "Food & Drinks": [
-    [Becca, "Rebecca Tyson", "Head of Food & Drinks"],
-    [Eleanor, "Eleanor Burnett-Stuart", "Food"],
-    [Michelle, "Michelle Del Carretto", "Drinks"]
-  ],
-  "Green & Access": [[Camille, "Camille McCarthy", "Green & Access"]],
-  Logistics: [
-    [Oliwia, "Oliwia Stecko", "Head of Logistics"],
-    [Lucy, "Lucy Ivey", "Logistics"],
-    [Rehan, "Rehan Chagla", "Logistics"]
-  ],
-  "Sponsorship & Publicity": [
-    [Christina, "Christina Lawrence", "Sponsorship"],
-    [Cicely, "Cicely Norman", "Publicity"]
-  ],
-  "Staffing & Security": [
-    [Fergus, "Fergus Kirman", "Head of Staffing & Security"],
-    [Finton, "Finton Hanks", "Staffing"],
-    [Emily, "Emily Wenban-Smith", "Security"]
-  ],
-  Treasurer: [[Benji, "Benji Holland", "Treasurer"]],
-  "Webmaster & Ticketing": [[Andy, "Andy Lo", "Webmaster & Ticketing"]]
+  // TODO: Add committee
+  "Webmaster & Ticketing": [[Scott, "Scott Jones", "Webmaster & Ticketing"]]
 };
 
 const Member = ({ img, name, role, ...others }) => (
-  <Grid container item direction="column" justifyContent="start" {...others}>
+  <Grid container item direction="column" justifyContent="start" {...others} >
     <Grid item textAlign="center">
       <Box
         component="img"
@@ -96,10 +36,13 @@ export default function CommitteeDisplay() {
   return (
     <Box
       mx="auto"
-      pt={5}
+      pt={10} pb={30}
       sx={{
         position: "relative",
-        maxWidth: 1200
+        maxWidth: 1200,
+        backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
+          backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+          backgroundSize: "100% 100%"
       }}
     >
       <Grid container color="tertiary.main" rowSpacing={5}>

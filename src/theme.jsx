@@ -1,19 +1,19 @@
 import { createTheme } from "@mui/material/styles";
-
 const defaultTheme = createTheme();
 const theme = createTheme({
   palette: {
+    mode: 'light',
     primary: {
-      main: "#004643",
-      contrastText: "#f3efde"
+      main: "#3f51b5",  // adjust color to your preference
+      contrastText: "#000"
     },
     secondary: {
-      main: "#7daaa2",
-      contrastText: "#fff"
+      main: "#000000",  // adjust color to your preference
+      contrastText: "#000"
     },
     tertiary: defaultTheme.palette.augmentColor({
       color: {
-        main: "#f3efde",
+        main: "#000000",
         contrastText: "#000"
       },
       name: "tertiary"

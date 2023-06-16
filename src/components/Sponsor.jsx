@@ -1,14 +1,18 @@
 import * as React from "react";
 import { Box, Grid, Typography } from "@mui/material";
+import { Stone } from "../assets/img";
 
 export default function Sponsor({ name, text, img, imgMaxWidth, ...others }) {
   return (
     <Box
       mx="auto"
-      pt={5}
+      pt={10} pb={30}
       sx={{
         position: "relative",
-        maxWidth: 1200
+        maxWidth: 1200,
+        backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
+          backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+          backgroundSize: "100% 100%"
       }}
       px={3}
       color="tertiary.main"

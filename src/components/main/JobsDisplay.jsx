@@ -18,7 +18,7 @@ import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/material/styles";
 
-import data from "../../assets/data/jobs.json";
+import data from "../../assets/data/2024/jobs.json";
 import { Stone } from "../../assets/img";
 
 const JobCard = styled(Card)(({ theme }) => ({
@@ -32,7 +32,7 @@ const JobCard = styled(Card)(({ theme }) => ({
 
 const BodyListItem = ({ text, icon }) => (
   <ListItem disableGutters>
-    <ListItemIcon sx={{ minWidth: 0, paddingRight: 1 }}>{icon}</ListItemIcon>
+    <ListItemIcon sx={{ minWidth: 0, paddingRight: 1 , }}>{icon}</ListItemIcon>
     <ListItemText
       primary={text}
       primaryTypographyProps={{ variant: "body2" }}
@@ -69,7 +69,7 @@ const JobItem = ({ name, description, numHours, pay, needsInterview }) => (
         }}
         size="small"
         target="_blank"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSesejqkbR6aI8JlYs39k3FhvZieSQTBXa6Ch6e62amlXU4t_A/viewform"
+        href="https://docs.google.com/forms/d/1F-7TQG291-854WWybTzFfJeKXc5ek9nJzMqYYqX9y2k/prefill"
       >
         Apply
       </Button>

@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <Container>
       <Header />
-      <HomeDisplay />
+      <HomeDisplay  />
       <Footer />
     </Container>
   );

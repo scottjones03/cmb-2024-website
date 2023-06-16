@@ -1,3 +1,4 @@
+import * as React  from 'react';
 export default function ImageBox({
   imageUrl = "https://source.unsplash.com/random/",
   lightness = 0,

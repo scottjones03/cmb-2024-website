@@ -1,17 +1,9 @@
-import TailorPage, { data as TailorData } from "./TailorPage";
-import SeanhannaPage, { data as SeanhannaData } from "./Seanhannapage";
-import RedBullPage from "./RedBull";
-import HireStreetPage, { data as HireStreetData } from "./HireStreetPage";
-import GrannyMaBubbleTeaPage, {
-  data as GrannyData
-} from "./GrannyMaBubbleTeaPage";
+import TestSponsor, {
+  data as TestData
+} from "./TestSponsor";
 
-export const data = [TailorData, SeanhannaData, HireStreetData, GrannyData];
+export const data = [TestData];
 
 export {
-  TailorPage,
-  SeanhannaPage,
-  RedBullPage,
-  HireStreetPage,
-  GrannyMaBubbleTeaPage
+  TestSponsor
 };

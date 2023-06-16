@@ -1,6 +1,8 @@
+import * as React  from 'react';
 import { Box, Typography } from "@mui/material";
 import BodyParagraph from "../BodyParagraph";
-import data from "../../assets/data/terms-and-conditions.json";
+import data from "../../assets/data/2024/terms-and-conditions.json";
+import { Stone } from "../../assets/img";
 
 const TnCDisplay = () => (
   <Box
@@ -10,7 +12,9 @@ const TnCDisplay = () => (
     maxWidth={1000}
     borderRadius={{ xs: 0, sm: 1 }}
     color="tertiary.main"
-    sx={{ backgroundColor: "rgba(0,0,0,0.3)" }}
+    sx={{ backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
+    backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+    backgroundSize: "100% 100%" }}
   >
     <Typography variant="h4" gutterBottom>
       {data.heading}

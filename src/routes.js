@@ -8,11 +8,7 @@ import {
   TnCPage,
   CommitteePage,
   SponsorPage,
-  TailorPage,
-  SeanhannaPage,
-  RedBullPage,
-  HireStreetPage,
-  GrannyMaBubbleTeaPage
+  TestSponsorPage
 } from "./pages";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -29,16 +25,8 @@ export default (
         <Route exact path="/sponsors" component={SponsorPage} />
         <Route
           exact
-          path="/sponsors/cambridge-tailors"
-          component={TailorPage}
-        />
-        <Route exact path="/sponsors/seanhanna" component={SeanhannaPage} />
-        <Route exact path="/sponsors/red-bull" component={RedBullPage} />
-        <Route exact path="/sponsors/hire-street" component={HireStreetPage} />
-        <Route
-          exact
-          path="/sponsors/granny-ma-bubble-tea"
-          component={GrannyMaBubbleTeaPage}
+          path="/sponsors/test-sponsor"
+          component={TestSponsorPage}
         />
         <Route exact path="/tickets" component={TicketsPage} />
         <Route exact path="/terms-and-conditions" component={TnCPage} />

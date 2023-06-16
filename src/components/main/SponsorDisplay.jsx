@@ -4,6 +4,7 @@ import { Box, Grid, Typography } from "@mui/material";
 
 import { NoStyleLink } from "../../components";
 import { data } from "../../pages/sponsors";
+import { Stone } from "../../assets/img";
 
 export default function SponsorDisplay() {
   return (
@@ -12,7 +13,10 @@ export default function SponsorDisplay() {
       pt={5}
       sx={{
         position: "relative",
-        maxWidth: 800
+        maxWidth: 800,
+        backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
+          backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+          backgroundSize: "100% 100%"
       }}
       px={3}
     >

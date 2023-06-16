@@ -93,21 +93,21 @@ const AccessDescription = () => (
   </>
 );
 
-// const SalesSection = ({ start, end }) => (
-//   <>
-//     <Typography variant="h4">Sales date</Typography>
-//     <BodyParagraph>
-//       Ticket sale starts at <strong>{start}</strong>
-//       {end && (
-//         <>
-//           {" "}
-//           and ends at <strong>{end}</strong>
-//         </>
-//       )}
-//       .
-//     </BodyParagraph>
-//   </>
-// );
+const SalesSection = ({ start, end }) => (
+  <>
+    <Typography variant="h4">Sales date</Typography>
+    <BodyParagraph>
+      Ticket sale starts at <strong>{start}</strong>
+      {end && (
+        <>
+          {" "}
+          and ends at <strong>{end}</strong>
+        </>
+      )}
+      .
+    </BodyParagraph>
+  </>
+);
 
 const GuestSection = ({ numGuests }) => (
   <>
@@ -129,58 +129,58 @@ const GuestSection = ({ numGuests }) => (
   </>
 );
 
-// const PurchaseMethodSection = ({ googleForm, ballot }) => (
-//   <>
-//     <Typography variant="h4">Purchase method</Typography>
-//     {googleForm ? (
-//       <>
-//         <BodyParagraph>
-//           You will receive an email from Christ's College when the ticket sales
-//           starts. Included in the email will be a link to a google form which
-//           you can submit to request for tickets.
-//         </BodyParagraph>
-//         {ballot && (
-//           <BodyParagraph>
-//             Tickets are distributed via a ballot. This means that by the end of
-//             the sales period, if we received more requests than tickets
-//             available, we will random selects tickets to be accepted.
-//           </BodyParagraph>
-//         )}
-//       </>
-//     ) : (
-//       <>
-//         <BodyParagraph>
-//           Please visit
-//           <Button
-//             sx={{ minWidth: 0, textTransform: "none" }}
-//             href="https://ticketing.christsmayball.co.uk/"
-//             target="_blank"
-//           >
-//             https://ticketing.christsmayball.co.uk/
-//           </Button>
-//           for instructions to purchase your ticket.
-//         </BodyParagraph>
-//       </>
-//     )}
-//     <BodyParagraph>
-//       If you opt in to our charity donation, you will be entered into a raffle
-//       to have your ticket refunded!
-//     </BodyParagraph>
-//     <BodyParagraph>
-//       Once you receive a confirmation email of your ticket reservations, you
-//       will have <strong>48 hours</strong> to perform bank transfers in order to
-//       secure your ticket.
-//     </BodyParagraph>
-//     <BodyParagraph>
-//       Please note that the buyer's ticket needs to be paid before we can approve
-//       the guest tickets.
-//       <strong>
-//         If the buyer fails to pay for his / her own ticket, neither the buyer
-//         nor the guests will get their tickets.
-//       </strong>
-//     </BodyParagraph>
-//   </>
-// );
+const PurchaseMethodSection = ({ googleForm, ballot }) => (
+  <>
+    <Typography variant="h4">Purchase method</Typography>
+    {googleForm ? (
+      <>
+        <BodyParagraph>
+          You will receive an email from Christ's College when the ticket sales
+          starts. Included in the email will be a link to a google form which
+          you can submit to request for tickets.
+        </BodyParagraph>
+        {ballot && (
+          <BodyParagraph>
+            Tickets are distributed via a ballot. This means that by the end of
+            the sales period, if we received more requests than tickets
+            available, we will random selects tickets to be accepted.
+          </BodyParagraph>
+        )}
+      </>
+    ) : (
+      <>
+        <BodyParagraph>
+          Please visit
+          <Button
+            sx={{ minWidth: 0, textTransform: "none" }}
+            href="https://ticketing.christsmayball.co.uk/"
+            target="_blank"
+          >
+            https://ticketing.christsmayball.co.uk/
+          </Button>
+          for instructions to purchase your ticket.
+        </BodyParagraph>
+      </>
+    )}
+    <BodyParagraph>
+      If you opt in to our charity donation, you will be entered into a raffle
+      to have your ticket refunded!
+    </BodyParagraph>
+    <BodyParagraph>
+      Once you receive a confirmation email of your ticket reservations, you
+      will have <strong>48 hours</strong> to perform bank transfers in order to
+      secure your ticket.
+    </BodyParagraph>
+    <BodyParagraph>
+      Please note that the buyer's ticket needs to be paid before we can approve
+      the guest tickets.
+      <strong>
+        If the buyer fails to pay for his / her own ticket, neither the buyer
+        nor the guests will get their tickets.
+      </strong>
+    </BodyParagraph>
+  </>
+);
 
 const DressCodeSection = () => (
   <>
@@ -253,7 +253,7 @@ export default function TicketsDisplay() {
           >
             <TicketTab label="Christ's JCR + MCR students" index={0} />
             <TicketTab label="Non-christ’s cambridge students" index={1} />
-            <TicketTab label="Christ's 2021 graduates" index={2} />
+            <TicketTab label="Christ's 2023 graduates" index={2} />
             <TicketTab label="Christ's alumni" index={3} />
             <TicketTab label="Christ's staff & fellow" index={4} />
           </Tabs>

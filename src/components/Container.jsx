@@ -1,3 +1,4 @@
+import * as React  from 'react';
 import Box from "@mui/material/Box";
 
 const Container = (props) => {
@@ -7,6 +8,7 @@ const Container = (props) => {
       minHeight="100vh"
       boxSizing="border-box"
       overflow="hidden"
+      pb={30}
       {...props}
     />
   );

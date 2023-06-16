@@ -6,7 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/EmailRounded";
 
 import { LogoMobile } from "../assets/img";
-
+import { Stone } from "../assets/img";
 const FooterLink = ({ text, link, ...others }) => (
   <Button
     color="tertiary"
@@ -24,7 +24,9 @@ const FooterLink = ({ text, link, ...others }) => (
 );
 
 const Footer = () => (
-  <Box pt={10} pb={10}>
+  <Box pt={10} pb={10} sx={{ backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
+  backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+  backgroundSize: "100% 100%"}}>
     <Box display="flex" justifyContent="center">
       <Box mx={1} mb={3}>
         <IconButton
@@ -142,7 +144,7 @@ const Footer = () => (
     </Grid>
     <Box py={3}>
       <Typography variant="subtitle1" textAlign="center" color="tertiary.main">
-        Copyright © Christ's May Ball Committee 2022
+        Copyright © Christ's May Ball Committee 2024
       </Typography>
     </Box>
   </Box>
