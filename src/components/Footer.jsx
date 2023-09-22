@@ -7,25 +7,29 @@ import EmailIcon from "@mui/icons-material/EmailRounded";
 
 import { LogoMobile } from "../assets/img";
 import { Stone } from "../assets/img";
-const FooterLink = ({ text, link, ...others }) => (
+const FooterLink = ({ text, link, href, ...others }) => (
   <Button
     color="tertiary"
     disableElevation
+    component={href ? 'a' : undefined}
     sx={{
       fontSize: 20,
       textTransform: "none"
     }}
     LinkComponent={link ? Link : undefined}
     to={link ? link : undefined}
+    href={href ? href : undefined}
     {...others}
   >
     {text}
   </Button>
 );
 
+
+
 const Footer = () => (
   <Box pt={10} pb={10} sx={{ backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
-  backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+  backgroundImage: { xs: `url(${Stone})`, sm: `url(${Stone})` },
   backgroundSize: "100% 100%"}}>
     <Box display="flex" justifyContent="center">
       <Box mx={1} mb={3}>
@@ -79,9 +83,9 @@ const Footer = () => (
             Page links
           </Typography>
           <FooterLink text="Home" link="/" />
-          <FooterLink text="Tickets" link="/tickets" />
+          {/* <FooterLink text="Tickets" link="/tickets" />
           <FooterLink text="Committee" link="/committee" />
-          <FooterLink text="Sponsors" link="/sponsors" />
+          <FooterLink text="Sponsors" link="/sponsors" /> */}
         </Box>
       </Grid>
       <Grid
@@ -123,22 +127,23 @@ const Footer = () => (
           >
             Details
           </Typography>
-          <FooterLink
+          {/* <FooterLink
             text="Terms and conditions"
             link="/terms-and-conditions"
           />
           <FooterLink
             text="Access handbook"
-            link={process.env.PUBLIC_URL + "/Accessibility-Handbook.pdf"}
+            href={`${process.env.PUBLIC_URL}/Accessibility-Handbook.pdf`}
             target="_blank"
           />
           <FooterLink
             text="Programme"
-            link={process.env.PUBLIC_URL + "/Programme.pdf"}
+            href={`${process.env.PUBLIC_URL}/Programme.pdf`}
             target="_blank"
-          />
+          /> */}
+
           <FooterLink text="Work for us" link="/work-for-us" />
-          <FooterLink text="Detailed information" link="/info" />
+          {/* <FooterLink text="Detailed information" link="/info" /> */}
         </Box>
       </Grid>
     </Grid>

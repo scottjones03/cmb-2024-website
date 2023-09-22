@@ -6,9 +6,9 @@ import { Banner } from "../assets/img";
 
 const pages = [
   { name: "Home", link: "/" },
-  { name: "Tickets", link: "/tickets" },
-  { name: "Committee", link: "/committee" },
-  { name: "Sponsors", link: "/sponsors" }
+  // { name: "Tickets", link: "/tickets" },
+  // { name: "Committee", link: "/committee" },
+  // { name: "Sponsors", link: "/sponsors" }
   // { name: "Work for us", link: "/work-for-us" }
 ];
 

@@ -8,7 +8,7 @@ export default function HomeDisplay() {
     <Container 
       maxWidth="md" 
       sx={{ backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
-      backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+      backgroundImage: { xs: `url(${Stone})`, sm: `url(${Stone})` },
       backgroundSize: "100% 100%"}} >
       <Box
         display="flex"
@@ -30,7 +30,7 @@ export default function HomeDisplay() {
           color="primary.main"
           mt={3}
         >
-          21 . 06 . 2024
+          2024
         </Typography>
         <Typography
           variant="h4"
@@ -39,7 +39,7 @@ export default function HomeDisplay() {
           mt={3}
           lineHeight="1.5"
         >
-          Welcome to the captivating celebration of the 2024 Christ's College May Ball. This time-honored tradition will take place in the enchanting setting of Christ's College, Cambridge. Unfolding within the College's beautiful gardens and historic buildings, this extraordinary night promises an unforgettable experience.
+          Christs MayBall Details Coming soon...
         </Typography>
         <Typography
           variant="h4"
@@ -48,7 +48,7 @@ export default function HomeDisplay() {
           mt={3}
           lineHeight="1.5"
         >
-          On June 16th, 2024, we will invite you to step into a world where academic brilliance meets pure festivity, where timeless tradition is paired with contemporary entertainment. This year's theme, yet to be revealed, promises to make the night more enchanting than ever before.
+          [Description 1]
         </Typography>
         <Typography
           variant="h4"
@@ -57,7 +57,7 @@ export default function HomeDisplay() {
           mt={3}
           lineHeight="1.5"
         >
-          From Champagne at dawn to delightful culinary surprises, from mesmerizing fireworks to live music and top DJs, every moment will be imbued with magic and splendor. We aim to surprise and delight you, bringing together students, alumni, and guests for a night that will be remembered for a lifetime.
+          [Description 2]
         </Typography>
         <Typography
           variant="h4"
@@ -67,7 +67,7 @@ export default function HomeDisplay() {
           mb={5}
           lineHeight="1.5"
         >
-          Stay tuned for updates on ticket sales, the reveal of our theme, and sneak peeks of the unique experiences we're preparing for you. Join us to celebrate the end of the academic year in style at the Christ's College May Ball 2024. It promises to be an enchanting night of glamour, elegance, and unforgettable experiences.
+          [Description 3]
         </Typography>
       </Box>
     </Container>

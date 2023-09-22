@@ -29,7 +29,7 @@ export default (
           path="/sponsors/test-sponsor"
           component={TestSponsorPage}
         />
-        <Route exact path="/tickets" component={TicketsPage} />
+        {/* <Route exact path="/tickets" component={TicketsPage} /> */}
         <Route exact path="/terms-and-conditions" component={TnCPage} />
         <Route exact path="/info" component={InfoPage} />
         <Route exact path="/committee" component={CommitteePage} />

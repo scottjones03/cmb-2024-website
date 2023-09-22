@@ -8,7 +8,6 @@ import { Stone } from "../../assets/img";
 
 const data = {
   // TODO: Add committee
-  "Webmaster & Ticketing": [[Scott, "Scott Jones", "Webmaster & Ticketing"]]
 };
 
 const Member = ({ img, name, role, ...others }) => (
@@ -41,7 +40,7 @@ export default function CommitteeDisplay() {
         position: "relative",
         maxWidth: 1200,
         backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
-          backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+          backgroundImage: { xs: `url(${Stone})`, sm: `url(${Stone})` },
           backgroundSize: "100% 100%"
       }}
     >

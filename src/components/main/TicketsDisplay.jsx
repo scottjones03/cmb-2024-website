@@ -232,7 +232,7 @@ export default function TicketsDisplay() {
         color={{ xs: "tertiary.main", sm: "inherit" }}
         sx={{
           backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
-          backgroundImage: { xs: "inherit", sm: `url(${Stone})` },
+          backgroundImage: { xs: `url(${Stone})`, sm: `url(${Stone})` },
           backgroundSize: "100% 100%"
         }}
       >
