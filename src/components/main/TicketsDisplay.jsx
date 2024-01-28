@@ -23,44 +23,57 @@ const TicketTabPanel = (props) => (
 
 const FirstSection = ({
   standardPrice,
+  alumniPrice,
+  staffPrice,
+  accessPrice,
+  accessPlusPrice,
   queueJumpPrice,
   diningPrice,
-  staff
+  nonChristsStandardPrice
 }) => (
   <>
     <Typography variant="h4">What's included in your ticket?</Typography>
     <BodyParagraph>
-      <strong>Every ticket</strong> gets you unlimited access to all the
-      fantastic food and drink on offer, as well as the opportunity to enjoy all
-      the ents, activities and music we have lined up (including a very special
-      headliner)! It promises to be a fabulous night – and we can’t wait for
-      everyone to experience it!
+        All tickets include an opt-out donation that will be shared amongst the <Button
+            sx={{ minWidth: 0, textTransform: "none" }}
+            href="https:/christsmayball.co.uk/charities"
+            target="_blank"
+          >
+          <strong>charities</strong>
+        </Button> that we are supporting this year.
     </BodyParagraph>
     <BodyParagraph>
-      So with <strong>every ticket</strong>, including every standard ticket,
-      you get this exciting package. Below is information about what else comes
-      with the different ticket types.
-    </BodyParagraph>
-    {staff ? (
-      <BodyParagraph>
-        <strong>Standard (£{standardPrice})</strong> – enjoy all of the above,
-        with priority entry to the ball at 20:30
-      </BodyParagraph>
-    ) : (
+      We encourage you to buy a t-shirt for £10 which will enter you into a giveaway to be reimbursed for the price of a standard ticket and whose proceeds will go to one of our charity partners SolidariTee.
+    </BodyParagraph>{(
       <>
         <BodyParagraph>
-          <strong>Standard (£{standardPrice})</strong> – enjoy all of the above,
-          with standard entry to the ball at 21:00
+          <strong>Christ's Standard (£{standardPrice})</strong> – Enjoy a night of unlimited food, drink and entertainment at the 2024 Christ’s May Ball. This ticket is open to Christ’s undergraduates and graduates and entitles you to two additional guests.
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Queue jump (£{queueJumpPrice})</strong> – priority entrance to
-          the Ball from 20:30 via a dedicated queue
+          <strong>Christ's Alumni (£{alumniPrice})</strong> – We are delighted to welcome back our alumni to join us for a night of unlimited food, drink and entertainment. All alumni ticket holders will be entered into a giveaway with our partners Gin D’Azur to stand the chance to win a case of their award winning Gin. Alumni are entitled to buy an additional guest ticket.
+        </BodyParagraph>
+        <BodyParagraph>
+          <strong>Christ’s Staff and Fellows (£{staffPrice})</strong> – We invite staff and fellows to join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment. Tickets are limited and will be allocated via a ballot that opens on the 1st of February and closes at 6pm on the 4th of February. Those who have been allocated a ticket will be informed on the 5th of February, with those who have been unsuccessful being given the option to purchase a ticket at standard (non-christ’s) price.Staff and fellows are entitled to buy an additional guest ticket at standard (non-christ’s) price.
+        </BodyParagraph>
+        <BodyParagraph>
+          <strong>Christ’s Access (£{accessPrice})</strong> – Christ’s undergraduates on means tested bursaries are entitled to discounted tickets for the May Ball. Once reserved, eligibility will be confirmed with the tutorial office before requesting payment. This ticket entitles you to two guest tickets.
+        </BodyParagraph>
+        <BodyParagraph>
+          <strong>Non - Christ’s Standard (£{nonChristsStandardPrice})</strong> – Join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment! This ticket is open to students, fellows and staff of the university of Cambridge and does not come with a guest allocation.
+        </BodyParagraph>
+        <BodyParagraph>
+          <strong>Access + (£{accessPlusPrice})</strong> – This is our brand new pilot scheme to widen access beyond Christ’s undergrads. Christ’s postgraduate students on means tested financial support are eligible to purchase a discounted Access + ticket at the time of the Christ’s Release. During general release, students from other colleges on the Cambridge bursary scheme will be eligible to buy a limited number of Access + Tickets, after which they will have the option to either join a waitlist or purchase a standard price ticket. For non-Christs’s students we will require a letter from their college’s tutorial office confirming receipt of the bursary.
         </BodyParagraph>
       </>
     )}
+    <Typography variant="h5" gutterBottom>
+      <b>Add Ons</b>
+    </Typography>
     <BodyParagraph>
-      <strong>Dining (£{diningPrice})</strong> – arrive at 18:00 for a decadent
-      four course meal in the Great Hall followed by instant entry to the Ball
+      <strong>Queue Jump (£{queueJumpPrice})</strong> – Queue jump allows faster entry to the 2024 Christ’s May Ball, allowing you more time to explore the beautiful scenery and eat and drink to your heart's content.
+    </BodyParagraph>
+    <BodyParagraph>
+      <strong>Dining (£{diningPrice})</strong> – Join us for a sumptuous meal in our formal hall, following which you are free to begin to explore the ball before the rest of the guests arrive.
     </BodyParagraph>
   </>
 );
@@ -236,84 +249,16 @@ export default function TicketsDisplay() {
           backgroundSize: "100% 100%"
         }}
       >
-        <Box mb={2} sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="ticket types tab"
-            textColor="inherit"
-            indicatorColor="primary"
-            TabIndicatorProps={{
-              sx: {
-                backgroundColor: { xs: "tertiary.main", sm: "primary.main" }
-              }
-            }}
-            variant="scrollable"
-            scrollButtons="auto"
-          >
-            <TicketTab label="Christ's JCR + MCR students" index={0} />
-            <TicketTab label="Non-christ’s cambridge students" index={1} />
-            <TicketTab label="Christ's 2023 graduates" index={2} />
-            <TicketTab label="Christ's alumni" index={3} />
-            <TicketTab label="Christ's staff & fellow" index={4} />
-          </Tabs>
-        </Box>
-        <TicketTabPanel value={value} index={0}>
           <FirstSection
-            standardPrice={160}
-            queueJumpPrice={175}
-            diningPrice={195}
+            standardPrice={175}
+            alumniPrice={195}
+            staffPrice={100}
+            accessPrice={100}
+            accessPlusPrice={130}
+            queueJumpPrice={20}
+            diningPrice={50}
+            nonChristsStandardPrice={195}
           />
-          <AccessDescription />
-          <DressCodeSection />
-          {/* <SalesSection start="12:00 noon 29th January, 2022" /> */}
-          <GuestSection numGuests={2} />
-          {/* <PurchaseMethodSection /> */}
-          <DetailedInfoSection />
-        </TicketTabPanel>
-        <TicketTabPanel value={value} index={1}>
-          <FirstSection
-            standardPrice={160}
-            queueJumpPrice={175}
-            diningPrice={195}
-          />
-          <DressCodeSection />
-          {/* <SalesSection start="12:00 noon 5th February, 2022" /> */}
-          <GuestSection numGuests={2} />
-          {/* <PurchaseMethodSection /> */}
-          <DetailedInfoSection />
-        </TicketTabPanel>
-        <TicketTabPanel value={value} index={2}>
-          <FirstSection
-            standardPrice={160}
-            queueJumpPrice={175}
-            diningPrice={195}
-          />
-          <DressCodeSection />
-          {/* <SalesSection start="12th January, 2022" /> */}
-          <GuestSection numGuests={2} />
-          {/* <PurchaseMethodSection googleForm /> */}
-          <DetailedInfoSection />
-        </TicketTabPanel>
-        <TicketTabPanel value={value} index={3}>
-          <FirstSection
-            standardPrice={195}
-            queueJumpPrice={205}
-            diningPrice={225}
-          />
-          <DressCodeSection />
-          {/* <SalesSection start="12th January, 2022" end="30th January, 2022" /> */}
-          <GuestSection numGuests={1} />
-          {/* <PurchaseMethodSection googleForm ballot /> */}
-        </TicketTabPanel>
-        <TicketTabPanel value={value} index={4}>
-          <FirstSection standardPrice={80} diningPrice={110} staff />
-          <DressCodeSection />
-          {/* <SalesSection start="18th January, 2022" end="1st February, 2022" /> */}
-          <GuestSection numGuests={3} />
-          {/* <PurchaseMethodSection googleForm ballot /> */}
-          <DetailedInfoSection />
-        </TicketTabPanel>
       </Box>
     </Box>
   );

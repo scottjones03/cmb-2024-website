@@ -1,13 +1,12 @@
 import React from "react";
 import { Footer, Header, Container } from "../components";
-import { HomeDisplay, CommitteeDisplay } from "../components/main";
+import { FAQDisplay } from "../components/main";
 
-export default function HomePage() {
+export default function TicketsPage() {
   return (
     <Container>
       <Header />
-      <HomeDisplay  />
-      <CommitteeDisplay />
+      <FAQDisplay />
       <Footer />
     </Container>
   );

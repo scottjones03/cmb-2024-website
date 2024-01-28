@@ -6,10 +6,11 @@ import { Banner } from "../assets/img";
 
 const pages = [
   { name: "Home", link: "/" },
-  // { name: "Tickets", link: "/tickets" },
-  // { name: "Committee", link: "/committee" },
-  // { name: "Sponsors", link: "/sponsors" }
-  // { name: "Work for us", link: "/work-for-us" }
+  { name: "Tickets", link: "/tickets" },
+  { name: "FAQs", link: "/faqs" },
+  { name: "Sponsors", link: "/sponsors" },
+  { name: "Charities", link: "/charities" },
+  { name: "Terms", link: "/terms-and-conditions" },
 ];
 
 export default function Header() {

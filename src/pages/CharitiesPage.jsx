@@ -1,13 +1,12 @@
 import React from "react";
 import { Footer, Header, Container } from "../components";
-import { HomeDisplay, CommitteeDisplay } from "../components/main";
+import { CharitiesDisplay } from "../components/main";
 
-export default function HomePage() {
+export default function CharitiesPage() {
   return (
     <Container>
       <Header />
-      <HomeDisplay  />
-      <CommitteeDisplay />
+      <CharitiesDisplay />
       <Footer />
     </Container>
   );

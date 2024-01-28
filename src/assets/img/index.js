@@ -8,7 +8,10 @@ import Scott from "./2024/headshots/Scott.png";
 
 
 import TestSponsor from "./2024/sponsors/christs.png";
-
+import CrisisCharity from "./2024/sponsors/crisis.jpg";
+import HomeStuartCharity from "./2024/sponsors/home_start.png";
+import PimentaeSponsor from "./2024/sponsors/pimentae.webp";
+import SoldariTeeCharity from "./2024/sponsors/solidaritee.jpg";
 
 export {
   Background,
@@ -18,4 +21,8 @@ export {
   Stone,
   Scott,
   TestSponsor,
+  CrisisCharity,
+  HomeStuartCharity,
+  PimentaeSponsor,
+  SoldariTeeCharity,
 };

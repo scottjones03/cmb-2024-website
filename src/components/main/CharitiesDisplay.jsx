@@ -3,10 +3,10 @@ import * as React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 
 import { NoStyleLink } from "../../components";
-import { data } from "../../pages/sponsors";
+import { data } from "../../pages/charities";
 import { Stone } from "../../assets/img";
 
-export default function SponsorDisplay() {
+export default function CharitiesDisplay() {
   return (
     <Box
       mx="auto"
@@ -20,6 +20,12 @@ export default function SponsorDisplay() {
       }}
       px={3}
     >
+      <Typography variant="h4" gutterBottom sx={{ padding: 1, textAlign: 'center' }}>
+        <b>CHARITIES</b>
+      </Typography>
+      <Typography variant="h5" gutterBottom sx={{ padding: 1, textAlign: 'center' }}>
+        Christ’s May Ball 2024 are proud to be supporting 3 amazing charities this year that work at local, national, and international levels. Your donations at ticket purchase will be going towards these charities. 
+      </Typography>
       <Grid
         container
         color="tertiary.main"

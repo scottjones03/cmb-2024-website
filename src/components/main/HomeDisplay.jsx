@@ -30,7 +30,7 @@ export default function HomeDisplay() {
           color="primary.main"
           mt={3}
         >
-          2024
+          18 . 06 . 2024
         </Typography>
         <Typography
           variant="h4"
@@ -39,35 +39,7 @@ export default function HomeDisplay() {
           mt={3}
           lineHeight="1.5"
         >
-          Christs MayBall Details Coming soon...
-        </Typography>
-        <Typography
-          variant="h4"
-          align="center"
-          color="secondary.main"
-          mt={3}
-          lineHeight="1.5"
-        >
-          [Description 1]
-        </Typography>
-        <Typography
-          variant="h4"
-          align="center"
-          color="secondary.main"
-          mt={3}
-          lineHeight="1.5"
-        >
-          [Description 2]
-        </Typography>
-        <Typography
-          variant="h4"
-          align="center"
-          color="secondary.main"
-          mt={3}
-          mb={5}
-          lineHeight="1.5"
-        >
-          [Description 3]
+          about the ball with old pictures????
         </Typography>
       </Box>
     </Container>

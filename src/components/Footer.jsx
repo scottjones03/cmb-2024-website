@@ -127,11 +127,11 @@ const Footer = () => (
           >
             Details
           </Typography>
-          {/* <FooterLink
-            text="Terms and conditions"
+           <FooterLink
+            text="Terms and Conditions"
             link="/terms-and-conditions"
           />
-          <FooterLink
+          {/* <FooterLink
             text="Access handbook"
             href={`${process.env.PUBLIC_URL}/Accessibility-Handbook.pdf`}
             target="_blank"
@@ -140,7 +140,7 @@ const Footer = () => (
             text="Programme"
             href={`${process.env.PUBLIC_URL}/Programme.pdf`}
             target="_blank"
-          /> */}
+          />  */}
 
           <FooterLink text="Work for us" link="/work-for-us" />
           {/* <FooterLink text="Detailed information" link="/info" /> */}

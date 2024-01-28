@@ -5,7 +5,7 @@ import { TestSponsor } from "../../assets/img";
 
 export const data = {
   name: "Christs College Cambridge",
-  text: [
+  bio: [
     "Random text",
     "For a fake sponsor"
   ],

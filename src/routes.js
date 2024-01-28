@@ -8,7 +8,9 @@ import {
   TnCPage,
   CommitteePage,
   SponsorPage,
-  TestSponsorPage
+  FAQPage,
+  TestSponsorPage,
+  CharitiesPage
 } from "./pages";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -29,10 +31,12 @@ export default (
           path="/sponsors/test-sponsor"
           component={TestSponsorPage}
         />
-        {/* <Route exact path="/tickets" component={TicketsPage} /> */}
+        <Route exact path="/tickets" component={TicketsPage} />
         <Route exact path="/terms-and-conditions" component={TnCPage} />
+        <Route exact path="/faqs" component={FAQPage} />
         <Route exact path="/info" component={InfoPage} />
         <Route exact path="/committee" component={CommitteePage} />
+        <Route exact path="/charities" component={CharitiesPage} />
       </Switch>
     </Router>
   </ThemeProvider>

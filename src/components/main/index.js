@@ -5,6 +5,8 @@ import SponsorDisplay from "./SponsorDisplay";
 import TicketsDisplay from "./TicketsDisplay";
 import TnCDisplay from "./TnCDisplay";
 import InfoDisplay from "./InfoDisplay";
+import FAQDisplay from "./FAQDisplay";
+import CharitiesDisplay from "./CharitiesDisplay";
 
 export {
   CommitteeDisplay,
@@ -13,5 +15,7 @@ export {
   SponsorDisplay,
   TicketsDisplay,
   TnCDisplay,
-  InfoDisplay
+  InfoDisplay,
+  FAQDisplay,
+  CharitiesDisplay
 };
