@@ -6,7 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/EmailRounded";
 
 import { LogoMobile } from "../assets/img";
-import { Stone } from "../assets/img";
+import { FooterImg } from "../assets/img";
 const FooterLink = ({ text, link, href, ...others }) => (
   <Button
     color="tertiary"
@@ -29,7 +29,7 @@ const FooterLink = ({ text, link, href, ...others }) => (
 
 const Footer = () => (
   <Box pt={10} pb={10} sx={{ backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
-  backgroundImage: { xs: `url(${Stone})`, sm: `url(${Stone})` },
+  backgroundImage: { xs: `url(${FooterImg})`, sm: `url(${FooterImg})` },
   backgroundSize: "100% 100%"}}>
     <Box display="flex" justifyContent="center">
       <Box mx={1} mb={3}>

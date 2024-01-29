@@ -20,9 +20,11 @@ export default function CharitiesDisplay() {
       }}
       px={3}
     >
-      <Typography variant="h4" gutterBottom sx={{ padding: 1, textAlign: 'center' }}>
-        <b>CHARITIES</b>
-      </Typography>
+      <Grid item xs={12} textAlign="center">
+        <Typography variant="h3" gutterBottom>
+          CHARITIES
+        </Typography>
+      </Grid>
       <Typography variant="h5" gutterBottom sx={{ padding: 1, textAlign: 'center' }}>
         Christ’s May Ball 2024 are proud to be supporting 3 amazing charities this year that work at local, national, and international levels. Your donations at ticket purchase will be going towards these charities. 
       </Typography>

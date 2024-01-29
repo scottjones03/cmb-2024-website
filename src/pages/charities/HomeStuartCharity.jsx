@@ -10,7 +10,7 @@ export const data = {
   ],
   img: HomeStuartCharity,
   imgMaxWidth: 400,
-  link: "/charities/home-stuart-charity"
+  link: "/charities/home-start-charity"
 };
 
 export default function HomeStuartCharityPage() {

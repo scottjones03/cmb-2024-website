@@ -1,11 +1,13 @@
 import * as React from "react";
-import { Tab, Tabs, Box, Typography, Button } from "@mui/material";
+import { Tab, Tabs, Box, Typography, Button , Grid} from "@mui/material";
 import { Link } from "react-router-dom";
 
 import BodyParagraph from "../BodyParagraph";
 import TabPanel from "../TabPanel";
 import { Stone } from "../../assets/img";
 import { OpenInNew } from "@mui/icons-material";
+
+import { TShirt } from "../../assets/img";
 
 const TicketTab = ({ label, index, ...others }) => (
   <Tab
@@ -21,6 +23,17 @@ const TicketTabPanel = (props) => (
   <TabPanel id="ticket-tabpanel" labelledby="ticket-tab" {...props} />
 );
 
+export const solidariTeeData = {
+  name: "SolidariTee - International",
+  bio: [
+    "Founded by a Cambridge student in 2017, SolidariTee works with organisations in Greece to provide legal and psychological aid to refugees. This is achieved through the sale of T-shirts designed by artists who have been affected by displacement. SolidariTee also aims to educate people on the refugee crisis through social media and events. ",
+    "Christ’s College May Ball is proud to be working with SolidariTee on exclusive SolidariTee x CMB t-shirts. You will have a chance at ticket purchase to buy a t-shirt for £10. If you purchase a t-shirt you will automatically be entered into a prize draw where you could get the price of your standard ticket reimbursed to you! The proceeds of our t-shirt sales will go towards our charities. "
+  ],
+  img: TShirt,
+  imgMaxWidth: 400,
+  link: "/charities/t-shirt-charity"
+};
+
 const FirstSection = ({
   standardPrice,
   alumniPrice,
@@ -34,17 +47,41 @@ const FirstSection = ({
   <>
     <Typography variant="h4">What's included in your ticket?</Typography>
     <BodyParagraph>
-        All tickets include an opt-out donation that will be shared amongst the <Button
-            sx={{ minWidth: 0, textTransform: "none" }}
-            href="https:/christsmayball.co.uk/charities"
-            target="_blank"
-          >
+        All tickets include an opt-out donation that will be shared amongst the <a href={`https://christsmayball.co.uk/charities`} style={{ textDecoration: 'none', color: 'inherit' }}>
           <strong>charities</strong>
-        </Button> that we are supporting this year.
+        </a> that we are supporting this year.
     </BodyParagraph>
     <BodyParagraph>
       We encourage you to buy a t-shirt for £10 which will enter you into a giveaway to be reimbursed for the price of a standard ticket and whose proceeds will go to one of our charity partners SolidariTee.
-    </BodyParagraph>{(
+    </BodyParagraph>
+    <Box
+      mx="auto"
+      pt={0} pb={0} // Remove padding
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center", // Center the content
+        justifyContent: "center", // Center the content
+        backgroundColor: { xs: "rgba(0,0,0,0.3)", sm: "inherit" },
+        backgroundImage: { xs: `url(${Stone})`, sm: `url(${Stone})` },
+        backgroundSize: "100% 100%",
+      }}
+      px={0} // Remove horizontal padding
+      color="tertiary.main"
+    >
+      <Grid item>
+        <Box
+          component="img"
+          my={0} // Remove margin
+          maxWidth={solidariTeeData.imgMaxWidth}
+          width="100%"
+          src={solidariTeeData.img}
+          alt="logo"
+        />
+      </Grid>
+    </Box>
+
+    {(
       <>
         <BodyParagraph>
           <strong>Christ's Standard (£{standardPrice})</strong> – Enjoy a night of unlimited food, drink and entertainment at the 2024 Christ’s May Ball. This ticket is open to Christ’s undergraduates and graduates and entitles you to two additional guests.
@@ -249,6 +286,11 @@ export default function TicketsDisplay() {
           backgroundSize: "100% 100%"
         }}
       >
+           <Grid item xs={12} textAlign="center">
+              <Typography variant="h3" gutterBottom>
+                TICKETS
+              </Typography>
+          </Grid>
           <FirstSection
             standardPrice={175}
             alumniPrice={195}

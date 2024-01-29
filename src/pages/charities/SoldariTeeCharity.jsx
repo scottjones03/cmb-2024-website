@@ -11,7 +11,7 @@ export const data = {
   ],
   img: SoldariTeeCharity,
   imgMaxWidth: 400,
-  link: "/charities/home-stuart-charity"
+  link: "/charities/solidaritee-charity"
 };
 
 export default function SoldariTeeCharityPage() {

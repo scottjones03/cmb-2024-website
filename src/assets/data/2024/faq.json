@@ -7,11 +7,62 @@
             {
                 "question": "What is Christs May Ball 2024?",
                 "answers": [
-                    "Christs College traditionally holds a May Ball on the Tuesday of May Week following undergraduate examinations. ",
-                    "This year our theme is ‘Paradise Lost’. Experience the incredible world of John Milton’s epic, stretching from the ethereal Fields of Elysium to the "
+                    "Christ’s College traditionally holds a May Ball on the Tuesday of May Week following undergraduate examinations.  "
+                ]
+            },
+            {
+                "question": "What is the theme?",
+                "answers": [
+                    "This year our theme is ‘Midsummer Night’s Dream’. Experience the ethereal world of Sharkespeare’s comedy, as you wander the enchanted forest and royal courts of Athens. "
+                ]
+            },
+            {
+                "question": "When are tickets released?",
+                "answers": [
+                    "Christ’s students have access to an early release on February 1st. ",
+                    "Alumni of Christ’s college can purchase tickets on February 5th.",
+                    "Main release will be on february 8th. "
 
                 ]
+            },
+            {
+                "question": "How do the access tickets work?",
+                "answers": [
+                    "Every Christ’s college undergrad on a full cambridge bursary is entitled to an access ticket at £100. ",
+                    "Additionally Access+ is available for Christ’s postgraduate students, and other Cambridge undergraduates on a full Cambridge bursary. The amount of access + available is based on the number of access tickets left after Christ’s students are prioritised with the early Christ’s launch. We expect that all Christ’s postgraduates on means tested bursaries will be able to receive an Access + ticket, with the rest opening up to students from other colleges on a first come first served basis. For non-Christ’s students we will require a letter from your tutorial office confirming receipt of a bursary. "
+                ]
+            },
+            {
+                "question": "How do I pay for my tickets?",
+                "answers": [
+                    "Payments should be made via bank transfer to the account details listed in the ticket reservation email.",
+                    "You will have 48 hours to complete the bank transfer or the reference code will be invalidated and your ticket will be lost, and offered to those on the waitlist. "
+                ]
+            },
+            {
+                "question": "Can I change the name of my tickets?",
+                "answers": [
+                    "Yes. You can request a name change for your ticket(s) by emailing webmaster@christsmayball.co.uk, up to 1 week prior to the Ball (Tuesday 11th June 2024). ",
+                    "There will be an additional charge of £10 for any name change until the end of March, and then names changes from that point will be £30. Payment for name change will be made via bank transfer with a unique code as reference emailed to you after your name change request. ",
+                    "A new ticket will be provided digitally to confirm name change. ",
+                    "Access tickets will not be eligible for a name change. "
+                ]
+            },
+            {
+                "question": "How will I receive my tickets?",
+                "answers": [       
+                    "Tickets will be distributed to the email you provide when purchasing your ticket. "    
+                ]
+            },
+            {
+                "question": "I have special dietary requirements, what shall I do?",
+                "answers": [       
+                    "Please fill out our dietary requirement questions following the purchase of your ticket, so that we are aware of your requirements before the ball.",
+                    "A variety of food and drink options will be provided at the ball, including comprehensive vegetarian and vegan options. ",
+                    "Allergen information will be available at the stalls and on our map. For any further queries, please contact our Food & Drink team. (food@christsmayball.co.uk)"  
+                ]
             }
+
         ]
       },
       {
@@ -20,12 +71,33 @@
             {
                 "question": "What type of identification will I need to enter the ball?",
                 "answers": [
-                    "ID cards, driving licences and passports are the only acceptable forms of identification.",
-                    "A Cambridge University card must bear the guests full name and date of birth (e.g. an undergraduate card)."
+                    "ID cards, driving licences and passports are the only acceptable forms of identification. "
+                ]
+            },
+            {
+                "question": "When will doors open and close?",
+                "answers": [
+                    "Doors for Standard tickets will open at 8:00.",
+                    "Doors for Queue jump tickets will open at 7:30. ",
+                    "Dining guests should report to the Great Gate at 6:00.",
+                    "Last entry will be at 11:00."
+                ]
+            },
+            {
+                "question": "What is the dress code?",
+                "answers": [
+                    "As usual for Christ’s May Ball the dress code will be black tie, or national dress. Sports blazers are not permitted.",
+                    "Additionally this year we encourage the wearing of accessories in line with the theme, such as fairy wings, puck horns and other such accessories to be worn in addition to black tie.",
+                    "The dress code will be strictly enforced. Those who are not properly attired will be refused entry to the ball."
+                ]
+            },
+            {
+                "question": "When does the ball end?",
+                "answers": [          
+                    "The ball ends at 5:00am when we will take the survivors photo of everyone who has made it to the end of the ball."
                 ]
             }
         ]
       }
     ]
   }
-  

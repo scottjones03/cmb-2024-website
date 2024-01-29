@@ -20,6 +20,11 @@ export default function SponsorDisplay() {
       }}
       px={3}
     >
+      <Grid item xs={12} textAlign="center">
+        <Typography variant="h3" gutterBottom>
+          SPONSORS
+        </Typography>
+      </Grid>
       <Grid
         container
         color="tertiary.main"

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Typography, List, ListItem } from "@mui/material";
+import { Box, Typography, List, ListItem , Grid} from "@mui/material";
 import { FAQPack } from "../../assets/data";
 import { Stone } from "../../assets/img";
 import BodyParagraph from "../BodyParagraph";
@@ -18,9 +18,11 @@ const FAQDisplay = () => (
       backgroundSize: "100% 100%",
     }}
   >
-    <Typography variant="h4" gutterBottom sx={{ padding: 1, textAlign: 'center' }}>
-      <b>{FAQPack.heading}</b>
-    </Typography>
+    <Grid item xs={12} textAlign="center">
+        <Typography variant="h3" gutterBottom>
+          {FAQPack.heading}
+        </Typography>
+    </Grid>
     {FAQPack.sections.map(({ title, questions }, i) => (
       <Box key={i} sx={{ padding: 2 }}>
         <Typography variant="h4" sx={{ padding: 2, borderBottom: '2px solid white', fontWeight: 'bold' }}>

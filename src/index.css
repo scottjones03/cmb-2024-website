@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'ITC Benguiat', serif; /* Use ITC Benguiat font */
 }
 
 body:before {
@@ -11,7 +12,7 @@ body:before {
   width: 100%;
   height: 100%;
   z-index: -10;
-  background: url(assets/img/2024/background-3.jpg) no-repeat center center;
+  background: url(assets/img/2024/background-5.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,6 +20,6 @@ body:before {
 }
 
 @font-face {
-  font-family: "Classico";
-  src: url("./assets/fonts/classico.ttf") format("truetype");
+  font-family: 'ITC Benguiat'; /* Use the font-family name */
+  src: url('./assets/fonts/unicode.benguiat.ttf') format('truetype'); /* Update the font file path */
 }

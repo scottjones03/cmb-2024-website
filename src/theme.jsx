@@ -1,23 +1,26 @@
 import { createTheme } from "@mui/material/styles";
+
 const defaultTheme = createTheme();
+
 const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: "#3f51b5",  // adjust color to your preference
+      main: "#18114A",
       contrastText: "#000"
     },
     secondary: {
-      main: "#000000",  // adjust color to your preference
+      main: "#18114A", 
       contrastText: "#000"
     },
-    tertiary: defaultTheme.palette.augmentColor({
-      color: {
-        main: "#000000",
-        contrastText: "#000"
-      },
-      name: "tertiary"
-    })
+    tertiary: {
+      main: "#4E457D", 
+      contrastText: "#000"
+    },
+    text: {
+      primary: "#4E457D", 
+      secondary: "#000080",
+    },
   },
   breakpoints: {
     values: {
@@ -29,25 +32,31 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: "Classico, Arial",
+    fontFamily: "ITC Benguiat, Arial", // Use ITC Benguiat font
     fontSize: 15,
     h1: {
-      fontWeight: 400
+      fontWeight: 400,
+      color: "#18114A" 
     },
     h2: {
-      fontWeight: 400
+      fontWeight: 400,
+      color: "#18114A" 
     },
     h3: {
-      fontWeight: 400
+      fontWeight: 400,
+      color: "#4E457D" 
     },
     h4: {
-      fontWeight: 400
+      fontWeight: 400,
+      color: "#4E457D" 
     },
     h5: {
-      fontWeight: 400
+      fontWeight: 400,
+      color: "#4E457D" 
     },
     h6: {
-      fontWeight: 400
+      fontWeight: 400,
+      color: "#4E457D" 
     }
   }
 });
