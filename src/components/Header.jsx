@@ -45,11 +45,6 @@ export default function Header() {
             <Button
               color="tertiary"
               disableElevation
-              sx={{
-                fontSize: 20,
-                textTransform: "none",
-                margin: "5px",
-              }}
               LinkComponent={link ? Link : undefined}
               to={link ? link : undefined}
             >
