@@ -80,26 +80,25 @@ const FirstSection = ({
         />
       </Grid>
     </Box>
-
     {(
       <>
         <BodyParagraph>
-          <strong>Christ's Standard (£{standardPrice})</strong> – Enjoy a night of unlimited food, drink and entertainment at the 2024 Christ’s May Ball. This ticket is open to Christ’s undergraduates and graduates and entitles you to two additional guests.
+          <strong>Christ's Standard (£{standardPrice})</strong> – This ticket is open to all Christ’s Students (undergraduate and postgraduate)  and comes with the right to buy two guest tickets at standard (non-christ’s) price.
         </BodyParagraph>
         <BodyParagraph>
           <strong>Christ's Alumni (£{alumniPrice})</strong> – We are delighted to welcome back our alumni to join us for a night of unlimited food, drink and entertainment. All alumni ticket holders will be entered into a giveaway with our partners Gin D’Azur to stand the chance to win a case of their award winning Gin. Alumni are entitled to buy an additional guest ticket.
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Christ’s Staff and Fellows (£{staffPrice})</strong> – We invite staff and fellows to join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment. Tickets are limited and will be allocated via a ballot that opens on the 1st of February and closes at 6pm on the 4th of February. Those who have been allocated a ticket will be informed on the 5th of February, with those who have been unsuccessful being given the option to purchase a ticket at standard (non-christ’s) price.Staff and fellows are entitled to buy an additional guest ticket at standard (non-christ’s) price.
+          <strong>Christ’s Staff and Fellows (£{staffPrice})</strong> – We invite staff and fellows to join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment. Tickets are limited and will be allocated via a ballot that opens on the 1st of February and closes at 6pm on the 4th of February. Those who have been allocated a ticket will be informed on the 5th of February, with those who have been unsuccessful being given the option to purchase a ticket at standard (non-christ’s) price. Staff and fellows are entitled to buy an additional guest ticket at standard (non-christ’s) price.
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Christ’s Access (£{accessPrice})</strong> – Christ’s undergraduates on means tested bursaries are entitled to discounted tickets for the May Ball. Once reserved, eligibility will be confirmed with the tutorial office before requesting payment. This ticket entitles you to two guest tickets.
+          <strong>Christ’s Access (£{accessPrice})</strong> – Christ’s undergraduate students on means tested bursaries are entitled to a discounted ticket for the May Ball. Once reserved, eligibility will be confirmed with the tutorial office before requesting payment. Buyers of this ticket are entitled to purchase two guest tickets at standard (non-christs’s) price.
         </BodyParagraph>
         <BodyParagraph>
           <strong>Non - Christ’s Standard (£{nonChristsStandardPrice})</strong> – Join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment! This ticket is open to students, fellows and staff of the university of Cambridge and does not come with a guest allocation.
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Access + (£{accessPlusPrice})</strong> – This is our brand new pilot scheme to widen access beyond Christ’s undergrads. Christ’s postgraduate students on means tested financial support are eligible to purchase a discounted Access + ticket at the time of the Christ’s Release. During general release, students from other colleges on the Cambridge bursary scheme will be eligible to buy a limited number of Access + Tickets, after which they will have the option to either join a waitlist or purchase a standard price ticket. For non-Christs’s students we will require a letter from their college’s tutorial office confirming receipt of the bursary.
+          <strong>Access + (£{accessPlusPrice})</strong> – This is our brand new pilot scheme to widen financial access beyond Christ’s undergraduate students. Christ’s postgraduate students on means tested financial support are eligible to purchase a discounted Access + ticket at the time of the Christ’s Release. During general release, students from other colleges on the Cambridge bursary scheme will be eligible to buy a limited number of Access + Tickets, after which they will have the option to either join a waitlist or purchase a standard price ticket. For non-Christs’s students we will require a letter from their college’s tutorial office confirming receipt of the bursary.
         </BodyParagraph>
       </>
     )}
@@ -107,7 +106,7 @@ const FirstSection = ({
       <b>Add Ons</b>
     </Typography>
     <BodyParagraph>
-      <strong>Queue Jump (£{queueJumpPrice})</strong> – Queue jump allows faster entry to the 2024 Christ’s May Ball, allowing you more time to explore the beautiful scenery and eat and drink to your heart's content.
+      <strong>Queue Jump (£{queueJumpPrice})</strong> – Queue jump allows express entry in to the 2024 Christ’s May Ball, allowing you more time to explore the beautiful scenery and eat and drink to your heart's content.
     </BodyParagraph>
     <BodyParagraph>
       <strong>Dining (£{diningPrice})</strong> – Join us for a sumptuous meal in our formal hall, following which you are free to begin to explore the ball before the rest of the guests arrive.
@@ -301,6 +300,17 @@ export default function TicketsDisplay() {
             diningPrice={50}
             nonChristsStandardPrice={195}
           />
+           <BodyParagraph>
+            Please visit
+            <Button
+              sx={{ minWidth: 0, textTransform: "none" }}
+              href="https://ticketing.christsmayball.co.uk/"
+              target="_blank"
+            >
+              https://ticketing.christsmayball.co.uk/
+            </Button>
+            for instructions to purchase your ticket.
+          </BodyParagraph>
       </Box>
     </Box>
   );

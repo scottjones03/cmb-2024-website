@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import { Banner } from "../assets/img";
 
 const pages = [
@@ -18,17 +19,17 @@ export default function Header() {
     <Box
       sx={{
         display: "flex",
-        justifyContent: "center",
+        flexDirection: "column", // Change to column for mobile devices
+        alignItems: "center", // Center items horizontally
         width: "100%",
         height: "100%",
-
       }}
     >
       <Box
         sx={{
           maxWidth: 1200,
           minWidth: 900,
-          position: "relative"
+          position: "relative",
         }}
       >
         <Box
@@ -38,32 +39,23 @@ export default function Header() {
             width: "100%",
             display: "flex",
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
           }}
         >
           {pages.map(({ name, link }) => (
             <Button
-              key={name}
-              color="tertiary"
-              size="large"
-              disableElevation
-              sx={{
-                fontWeight: 600,
-                fontSize: {
-                  xs: 16,
-                  sm: 26
-                },
-                px: {
-                  xs: 0.5,
-                  sm: 1.5
-                },
-                fontStyle: "italic"
-              }}
-              LinkComponent={Link}
-              to={link}
-            >
-              {name}
-            </Button>
+            color="tertiary"
+            disableElevation
+            sx={{
+              fontSize: 20,
+              textTransform: "none"
+            }}
+            LinkComponent={link ? Link : undefined}
+            to={link ? link : undefined}
+          >
+            {name}
+          </Button>
+            
           ))}
         </Box>
         <Box component="img" src={Banner} alt="banner" sx={{ width: "100%" }} />
@@ -71,3 +63,4 @@ export default function Header() {
     </Box>
   );
 }
+
