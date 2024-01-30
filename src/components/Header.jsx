@@ -38,7 +38,6 @@ export default function Header() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            flexDirection: "column",
             textAlign: "center",
           }}
         >
