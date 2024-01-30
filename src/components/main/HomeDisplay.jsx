@@ -43,7 +43,6 @@ export default function HomeDisplay() {
       mt={3}
       lineHeight="1.5"
     >
-      about the ball with old pictures????
     </Typography>
   </Box>
 </Container>

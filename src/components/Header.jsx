@@ -2,7 +2,6 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import { Banner } from "../assets/img";
 
 const pages = [
@@ -19,16 +18,15 @@ export default function Header() {
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column", // Change to column for mobile devices
-        alignItems: "center", // Center items horizontally
+        flexDirection: "column",
+        alignItems: "center",
         width: "100%",
         height: "100%",
       }}
     >
       <Box
         sx={{
-          maxWidth: 1200,
-          minWidth: 900,
+          width: "100%", // Make the container full-width
           position: "relative",
         }}
       >
@@ -40,22 +38,24 @@ export default function Header() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            flexDirection: "column",
+            textAlign: "center",
           }}
         >
           {pages.map(({ name, link }) => (
             <Button
-            color="tertiary"
-            disableElevation
-            sx={{
-              fontSize: 20,
-              textTransform: "none"
-            }}
-            LinkComponent={link ? Link : undefined}
-            to={link ? link : undefined}
-          >
-            {name}
-          </Button>
-            
+              color="tertiary"
+              disableElevation
+              sx={{
+                fontSize: 20,
+                textTransform: "none",
+                margin: "5px",
+              }}
+              LinkComponent={link ? Link : undefined}
+              to={link ? link : undefined}
+            >
+              {name}
+            </Button>
           ))}
         </Box>
         <Box component="img" src={Banner} alt="banner" sx={{ width: "100%" }} />
@@ -63,8 +63,3 @@ export default function Header() {
     </Box>
   );
 }
-
-
-
-
-
