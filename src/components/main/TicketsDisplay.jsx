@@ -285,6 +285,8 @@ export default function TicketsDisplay() {
           backgroundSize: "100% 100%"
         }}
       >
+
+        
            <Grid item xs={12} textAlign="center">
               <Typography variant="h3" gutterBottom>
                 TICKETS
