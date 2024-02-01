@@ -47,7 +47,7 @@ const FirstSection = ({
   <>
     <Typography variant="h4">What's included in your ticket?</Typography>
     <BodyParagraph>
-        All tickets include an opt-out donation that will be shared amongst the <a href={`https://christsmayball.co.uk/charities`} style={{ textDecoration: 'none', color: 'inherit' }}>
+        All tickets include an opt-out donation that will be shared amongst the <a href={`https://www.christsmayball.co.uk/#/charities`} style={{ textDecoration: 'none', color: 'inherit' }}>
           <strong>charities</strong>
         </a> that we are supporting this year.
     </BodyParagraph>
@@ -286,7 +286,7 @@ export default function TicketsDisplay() {
         }}
       >
 
-        
+
            <Grid item xs={12} textAlign="center">
               <Typography variant="h3" gutterBottom>
                 TICKETS

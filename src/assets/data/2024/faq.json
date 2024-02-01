@@ -55,6 +55,12 @@
                 ]
             },
             {
+                "question": "How will I receive my t-shirt? ",
+                "answers": [       
+                    "We will be organising collection sessions where those who have bought t-shirts can pick up their t-shirts. An email will be sent at a later date to confirm the details of this." 
+                ]
+            },
+            {
                 "question": "I have special dietary requirements, what shall I do?",
                 "answers": [       
                     "Please fill out our dietary requirement questions following the purchase of your ticket, so that we are aware of your requirements before the ball.",
@@ -62,7 +68,6 @@
                     "Allergen information will be available at the stalls and on our map. For any further queries, please contact our Food & Drink team. (food@christsmayball.co.uk)"  
                 ]
             }
-
         ]
       },
       {
