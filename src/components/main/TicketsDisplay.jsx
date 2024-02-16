@@ -305,7 +305,7 @@ export default function TicketsDisplay() {
       >
 
           <Link href={'https://ticketing.christsmayball.co.uk/'} target="_blank" rel="noopener noreferrer">
-            <img src={BuyTicketButton} alt="Clickable Image" />
+            <img src={BuyTicketButton} alt="Clickable Image" style={{width: '100%',height: 'auto', display: 'block'  }} />
           </Link>
            <Grid item xs={12} textAlign="center">
               <Typography variant="h3" gutterBottom>
