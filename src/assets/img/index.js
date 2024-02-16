@@ -16,6 +16,7 @@ import RedBullSponsor from "./2024/sponsors/RedBullEnergyDrink transparent.png";
 import GinDAzurSponsor from "./2024/sponsors/gin_d_azur.png";
 import NicheCocktailsSponsor from "./2024/sponsors/niche cocktails.png";
 import TShirt from "./2024/sponsors/Solidaritee tshirt photos.png";
+import BuyTicketButton from "./2024/CHRIST’S COLLEGE MAY BALL-3.png";
 
 export {
   Background,
@@ -33,5 +34,6 @@ export {
   SoldariTeeCharity,
   RedBullSponsor,
   GinDAzurSponsor,
-  NicheCocktailsSponsor
+  NicheCocktailsSponsor,
+  BuyTicketButton
 };

@@ -1,13 +1,14 @@
 import * as React from "react";
 import { Tab, Tabs, Box, Typography, Button , Grid} from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 import BodyParagraph from "../BodyParagraph";
 import TabPanel from "../TabPanel";
 import { Stone } from "../../assets/img";
 import { OpenInNew } from "@mui/icons-material";
 
-import { TShirt } from "../../assets/img";
+import { TShirt , BuyTicketButton} from "../../assets/img";
 
 const TicketTab = ({ label, index, ...others }) => (
   <Tab
@@ -45,11 +46,9 @@ const FirstSection = ({
   nonChristsStandardPrice
 }) => (
   <>
-    <Typography variant="h4">What's included in your ticket?</Typography>
+    
     <BodyParagraph>
-        All tickets include an opt-out donation that will be shared amongst the <a href={`https://www.christsmayball.co.uk/#/charities`} style={{ textDecoration: 'none', color: 'inherit' }}>
-          <strong>charities</strong>
-        </a> that we are supporting this year.
+      There is an option to include an extra £2 to the price of your ticket which will be shared amongst the three charities that the Christ’s May Ball is supporting. <a href={`https://www.christsmayball.co.uk/#/charities`} style={{ textDecoration: 'none', color: 'inherit' }}> <strong>charities</strong></a> 
     </BodyParagraph>
     <BodyParagraph>
       We encourage you to buy a t-shirt for £10 which will enter you into a giveaway to be reimbursed for the price of a standard ticket and whose proceeds will go to one of our charity partners SolidariTee.
@@ -83,22 +82,41 @@ const FirstSection = ({
     {(
       <>
         <BodyParagraph>
-          <strong>Christ's Standard (£{standardPrice})</strong> – This ticket is open to all Christ’s Students (undergraduate and postgraduate)  and comes with the right to buy two guest tickets at standard (non-christ’s) price.
+          <strong>Christ's Standard (£{standardPrice})</strong> 
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Christ's Alumni (£{alumniPrice})</strong> – We are delighted to welcome back our alumni to join us for a night of unlimited food, drink and entertainment. All alumni ticket holders will be entered into a giveaway with our partners Gin D’Azur to stand the chance to win a case of their award winning Gin. Alumni are entitled to buy an additional guest ticket.
+        Enjoy a night of unlimited food, drink and entertainment at the 2024 Christ’s May Ball.
+        This ticket is open to all Christ’s Students (undergraduate and postgraduate)  and comes with the right to buy four guest tickets at standard (non-christ’s) price.
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Christ’s Staff and Fellows (£{staffPrice})</strong> – We invite staff and fellows to join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment. Tickets are limited and will be allocated via a ballot that opens on the 1st of February and closes at 6pm on the 4th of February. Those who have been allocated a ticket will be informed on the 5th of February, with those who have been unsuccessful being given the option to purchase a ticket at standard (non-christ’s) price. Staff and fellows are entitled to buy an additional guest ticket at standard (non-christ’s) price.
+          <strong>Christ's Alumni (£{alumniPrice})</strong> 
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Christ’s Access (£{accessPrice})</strong> – Christ’s undergraduate students on means tested bursaries are entitled to a discounted ticket for the May Ball. Once reserved, eligibility will be confirmed with the tutorial office before requesting payment. Buyers of this ticket are entitled to purchase two guest tickets at standard (non-christs’s) price.
+        We are delighted to welcome back our alumni to join us for a night of unlimited food, drink and entertainment. All alumni ticket holders will be entered into a giveaway with our partners Gin D’Azur to stand the chance to win a case of their award winning Gin. Alumni are entitled to buy three additional guest tickets.
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Non - Christ’s Standard (£{nonChristsStandardPrice})</strong> – Join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment! This ticket is open to students, fellows and staff of the university of Cambridge and does not come with a guest allocation.
+          <strong>Christ’s Staff and Fellows (£{staffPrice})</strong> 
         </BodyParagraph>
         <BodyParagraph>
-          <strong>Access + (£{accessPlusPrice})</strong> – This is our brand new pilot scheme to widen financial access beyond Christ’s undergraduate students. Christ’s postgraduate students on means tested financial support are eligible to purchase a discounted Access + ticket at the time of the Christ’s Release. During general release, students from other colleges on the Cambridge bursary scheme will be eligible to buy a limited number of Access + Tickets, after which they will have the option to either join a waitlist or purchase a standard price ticket. For non-Christs’s students we will require a letter from their college’s tutorial office confirming receipt of the bursary.
+        We invite staff and fellows to join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment. Tickets are limited and will be allocated via a ballot that opens on the 1st of February and closes at 6pm on the 4th of February. Those who have been allocated a ticket will be informed on the 5th of February, with those who have been unsuccessful being given the option to purchase a ticket at standard (non-christ’s) price. Staff and fellows are entitled to buy three additional guest tickets at standard (non-christ’s) price.
+        </BodyParagraph>
+        <BodyParagraph>
+          <strong>Christ’s Access (£{accessPrice})</strong> 
+        </BodyParagraph>
+        <BodyParagraph>
+        Christ’s undergraduate students on means tested bursaries are entitled to a discounted ticket for the May Ball. Once reserved, eligibility will be confirmed with the tutorial office before requesting payment. Buyers of this ticket are entitled to purchase two guest tickets at standard (non-christs’s) price.
+        </BodyParagraph>
+        <BodyParagraph>
+          <strong>Non - Christ’s Standard (£{nonChristsStandardPrice})</strong>
+        </BodyParagraph>
+        <BodyParagraph>
+        Join us at the 2024 Christ’s May Ball for a night of unlimited food, drink and entertainment! This ticket is open to students, fellows and staff of the university of Cambridge and comes with the right to buy two additional guest tickets.
+        </BodyParagraph>
+        <BodyParagraph>
+          <strong>Access + (£{accessPlusPrice})</strong>
+        </BodyParagraph>
+        <BodyParagraph>
+        This is our brand new pilot scheme to widen financial access beyond Christ’s undergraduate students. Christ’s postgraduate students on means tested financial support are eligible to purchase a discounted Access + ticket at the time of the Christ’s Release. During general release, students from other colleges on the Cambridge bursary scheme will be eligible to buy a limited number of Access + Tickets, after which they will have the option to either join a waitlist or purchase a standard price ticket. For non-Christs’s students we will require a letter from their college’s tutorial office confirming receipt of the bursary.
         </BodyParagraph>
       </>
     )}
@@ -254,7 +272,7 @@ const DetailedInfoSection = () => (
         color="primary"
         size="small"
         variant="text"
-        LinkComponent={Link}
+        LinkComponent={RouterLink}
         to="/info"
         sx={{ textTransform: "none", fontWeight: "bold", minWidth: 0 }}
         endIcon={<OpenInNew />}
@@ -286,10 +304,12 @@ export default function TicketsDisplay() {
         }}
       >
 
-
+          <Link href={'https://ticketing.christsmayball.co.uk/'} target="_blank" rel="noopener noreferrer">
+            <img src={BuyTicketButton} alt="Clickable Image" />
+          </Link>
            <Grid item xs={12} textAlign="center">
               <Typography variant="h3" gutterBottom>
-                TICKETS
+                TICKETING INFORMATION
               </Typography>
           </Grid>
           <FirstSection
@@ -302,17 +322,7 @@ export default function TicketsDisplay() {
             diningPrice={50}
             nonChristsStandardPrice={195}
           />
-           <BodyParagraph>
-            Please visit
-            <Button
-              sx={{ minWidth: 0, textTransform: "none" }}
-              href="https://ticketing.christsmayball.co.uk/"
-              target="_blank"
-            >
-              https://ticketing.christsmayball.co.uk/
-            </Button>
-            for instructions to purchase your ticket.
-          </BodyParagraph>
+           
       </Box>
     </Box>
   );

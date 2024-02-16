@@ -8,7 +8,7 @@ const data = {
     ["Adanna Okoli", "President", "president@christsmayball.co.uk"],
     ["Amelia Cheeseman", "President", "president@christsmayball.co.uk"],
     ["Eliana Dyer-Fernandes", "Head of Art & Design", "design@christsmayball.co.uk"],
-    ["Annie Milhoffer", "Art & Design", "design@christsmayball.co.uk"],
+    ["Annie Milhofer", "Art & Design", "design@christsmayball.co.uk"],
     ["Monty Hunt", "Art & Design", "design@christsmayball.co.uk"],
     ["Adhithy Hari Baskar", "Art & Design", "design@christsmayball.co.uk"],
     ["Katie Burge", "Graphics", "graphics@christsmayball.co.uk"],
